@@ -2,10 +2,11 @@
 #include "bank_queueing_problem.h"
 #include "string/sequence_string.h"
 #include "matrix/sparse_matrix.h"
+#include "list/sequence_list.h"
 
 int main(){
 	//bank_simulation();
-	test();
+	//test();
 	/*int m[6][7] = {{0,12,9,0,0,0,0},
 	               {0,0,0,0,0,0,0},
 				   {-3,0,0,0,0,14,0},
@@ -61,4 +62,23 @@ int main(){
 	multiplymatrix(r,m1,m2);
 	r.printm();*/
 
+	slist<int> s(20);
+	cout <<  s.getlen() << "  " << s.getcapacity() << endl;
+	for(int i=0; i<10; i++) s.insert(s.getlen(), i);
+	s.traver([](const int &item)->void{ cout << item << "  "; });
+	cout << endl;
+
+	slist<int> s1;
+	cout << s1.getlen() << "  " << s1.getcapacity() << endl;
+	s1.insert(s1.getlen(), 13);
+	s1.insert(s1.getlen(), 3);
+	s1.insert(s1.getlen(), 10);
+	for(int i=4; i<14; i++) s1.insert(s1.getlen(), i);
+	cout << s1.getlen() << "  " << s1.getcapacity() << endl;
+	s1.traver([](const int &item)->void{ cout << item << "  "; });
+	cout << endl;
+
+	s.unionlist(s1);
+	s.traver([](const int &item)->void{ cout << item << "  ";});
+	cout << endl;
 }

@@ -114,6 +114,7 @@ return_code sllist<T>::insert(const T &item, bool(*cmp)(const T&, const T&)){
 	}
 		
 	insert(position, item);
+	return successful;
 }
 
 template<class T>

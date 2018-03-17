@@ -5,12 +5,14 @@
 
 struct Event{
 	int Occurtime; //事件发生的时间
-	int etype;     //事件类型，0-达到事件； x（1-4）-x窗口离开事件 
+	int etype;     //事件类型，0-达到事件； x（1-4）-x窗口离开事件, -1为初始值
+	Event(int o=0, int e=-1): Occurtime(o), etype(e){}; 
 }; 
 
 struct qelement{
 	int arrivetime; //到达银行的时间
 	int dealtime;   //处理时间 
+	qelement(int a=0, int d=0): arrivetime(a), dealtime(d){};
 };
 
 const  int closetime = 120; 
@@ -35,7 +37,7 @@ int minqueue(){
 void init(){
 	totaltime = 0;
 	totalnums = 0;
-	Event event{0,0};
+	Event event(0,0);
 	ll.insert(event, cmp); //将第一个到达事件放入事件发生器 
 }
 
@@ -48,16 +50,16 @@ void customerarrive(){
 	int dealtime = 1+rand()%5;
 	int arrivetime = 1+rand()%30;
 	
-	qelement qe{e.Occurtime, dealtime};
+	qelement qe(e.Occurtime, dealtime);
 	int minq = minqueue();
 	cout << "进入窗口" << minq+1 << endl; 
 	lq[minq].push(qe);
 	if(lq[minq].size() == 1){ //添加离开事件 
-		Event newdeparture{e.Occurtime+dealtime, minq+1};
+		Event newdeparture(e.Occurtime+dealtime, minq+1);
 		ll.insert(newdeparture, cmp); 
 	}
 	
-	Event newarrive{e.Occurtime+arrivetime, 0};//添加新的达到事件 
+	Event newarrive(e.Occurtime+arrivetime, 0);//添加新的达到事件 
 	if( newarrive.Occurtime >= closetime ) return;
 	ll.insert(newarrive, cmp);
 }
@@ -77,7 +79,7 @@ void customerdeparture(){
 	
 	if(lq[e.etype-1].size() > 0){
 		lq[e.etype-1].front(qe);
-		Event newdeparture{e.Occurtime + qe.dealtime, e.etype}; //添加新的离开事件 
+		Event newdeparture(e.Occurtime + qe.dealtime, e.etype); //添加新的离开事件 
 		ll.insert(newdeparture, cmp);
 	} 
 }

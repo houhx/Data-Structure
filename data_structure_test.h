@@ -117,17 +117,19 @@ void printsllist(){
 }
 
 void test(){
+	int system_return = -1; //接收system()函数的返回值
 	print();
 	int type;
 	while((cin >> type) && type != 4){
 		switch(type){
 		    case 1:{                                      //队列 
-		    	system("clear");
+		    	system_return = system("clear");
+				if(system_return != 0) cout << "system command proccessor error!" << endl;
 		        printqueue();
 				while((cin >> type) && type != 4){
 					switch(type){
 					    case 1: {
-					        system("clear");
+					        system_return = system("clear");
 					        printcq();
 		                    cqueue cq;
 		                    while((cin >> type) && type != 10){
@@ -217,13 +219,13 @@ void test(){
 									}        		
 								}
 							}
-							system("clear");
+							system_return = system("clear");
 							printqueue();
 							break;
 					    }
 					    
 					    case 2: {
-					        system("clear");
+					        system_return = system("clear");
 					        printlq();
 		                    linkqueue<int> lq;
 		                    while((cin >> type) && type != 8){
@@ -290,13 +292,13 @@ void test(){
 									}      		
 								}
 							}
-							system("clear");
+							system_return = system("clear");
 							printqueue();
 							break;
 					    }
 						
 						case 3: {
-					        system("clear");
+					        system_return = system("clear");
 					        printsq();
 		                    squeue sq;
 		                    while((cin >> type) && type != 10){
@@ -380,24 +382,24 @@ void test(){
 									}        		
 								}
 							}
-							system("clear");
+							system_return = system("clear");
 							printqueue();
 							break;
 					    }		  
 				    }
 				}
-				system("clear");
+				system_return = system("clear");
 				print();
 				break;
 			}
 			        
 	        case 2:{                                     //栈 
-		    	system("clear");
+		    	system_return = system("clear");
 		        printstack();
 				while((cin >> type) && type != 3){
 					switch(type){
 					    case 1: {
-					        system("clear");
+					        system_return = system("clear");
 					        printsstack();
 		                    sstack ss;
 		                    while((cin >> type) && type != 9){
@@ -471,13 +473,13 @@ void test(){
 									}        		
 								}
 							}
-							system("clear");
+							system_return = system("clear");
 							printstack();
 							break;
 					    }
 					    
 					    case 2: {
-					    	system("clear");
+					    	system_return = system("clear");
 					        printlstack();
 		                    linkstack ls;
 		                    while((cin >> type) && type != 7){
@@ -534,24 +536,24 @@ void test(){
 									}       		
 								}
 							}
-							system("clear");
+							system_return = system("clear");
 							printstack();
 							break;
 						}		  
 				    }
 				}
-				system("clear");
+				system_return = system("clear");
 				print();
 				break;
 			}
 			
 			case 3:{                                     //线性表 
-		    	system("clear");
+		    	system_return = system("clear");
 		        printlist();
 				while((cin >> type) && type != 3){
 					switch(type){
 					    case 1: {                    //单链表 
-					        system("clear");
+					        system_return = system("clear");
 					        printllist();
 		                    linklist<int> ll;
 		                    while((cin >> type) && type != 9){
@@ -604,7 +606,7 @@ void test(){
 										}
 										cout << "\n\n指出你要删除第几个元素（1-" << ll.size() << " ）：";
 										cin >> type;
-										int save;
+										int save = 0;
 										ll.remove(type,save);
 										cout << "\n成功删除第"<< type << "个元素：" << save << endl;
 										printllist();
@@ -634,7 +636,7 @@ void test(){
 										}
 										cout << "\n\n指出你要查看第几个元素（1-" << ll.size() << " ）：";
 										cin >> type;
-										int save;
+										int save = 0;
 										ll.retrieve(type,save);
 										cout << "\n第"<< type << "个元素：" << save << endl;
 										printllist();
@@ -648,13 +650,13 @@ void test(){
 									}       		
 								}
 							}
-							system("clear");
+							system_return = system("clear");
 							printlist();
 							break;
 					    }
 						
 						case 2: {                    //静态链表 
-					        system("clear");
+					        system_return = system("clear");
 					        printsllist();
 		                    sllist<int> sll;
 		                    while((cin >> type) && type != 9){
@@ -707,7 +709,7 @@ void test(){
 										}
 										cout << "\n\n指出你要删除第几个元素（1-" << sll.size() << " ）：";
 										cin >> type;
-										int save;
+										int save = 0;
 										sll.remove(type,save);
 										cout << "\n成功删除第"<< type << "个元素：" << save << endl;
 										printllist();
@@ -737,7 +739,7 @@ void test(){
 										}
 										cout << "\n\n指出你要查看第几个元素（1-" << sll.size() << " ）：";
 										cin >> type;
-										int save;
+										int save = 0;
 										sll.retrieve(type,save);
 										cout << "\n第"<< type << "个元素：" << save << endl;
 										printllist();
@@ -751,13 +753,13 @@ void test(){
 									}       		
 								}
 							}
-							system("clear");
+							system_return = system("clear");
 							printlist();
 							break;
 					    }		  
 				    }
 				}
-				system("clear");
+				system_return = system("clear");
 				print();
 				break;
 			} 						  
