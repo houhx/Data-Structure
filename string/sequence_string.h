@@ -16,18 +16,19 @@ public:
 private:
     char *str;
     int  len;
-    int* Next(); 
+    int* Next(mystring&); 
 };
 
-int* mystring::Next(){
-    int *next = new int(len);
-    next[0] = 0;
-    int i=0, j=0;
-    while(i<len-1){
-        if(j==0 || str[i]==str[j]){
+int* mystring::Next(mystring &need){
+    int *next = new int(need.strlen());
+    next[0] = -1;
+    int i=0, j=-1;
+    while(i<need.strlen()-1){
+        if(j==-1 || need.str[i]==need.str[j]){
             i++;
             j++;
-            next[i] = j;
+            if(need.str[i] == need.str[j]) next[i] = next[j];
+            else next[i] = j;
         }
         else{
             j = next[j];
@@ -142,7 +143,9 @@ int mystring::index_kmp(mystring &need, int pos){
         abort();
     }
 
-    int *next = Next();
+    int *next = Next(need);
+    for(int i=0; i<need.strlen(); i++) cout << next[i] << "   ";
+    cout << endl;
 
     int i=pos, j=0;
     while(i<len && j<need.strlen()){
