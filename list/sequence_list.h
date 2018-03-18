@@ -6,6 +6,8 @@ public:
     slist(int cap=10);
     slist(const slist<T> &s);
     slist<T>& operator=(const slist<T> &s);
+    ~slist();
+
     return_code setcapacity(int n);
     int getlen()const{ return nowlen; };
     int getcapacity()const{ return capacity; };
@@ -13,13 +15,17 @@ public:
     void setincreasement(int n){ increasement = n; };
     bool empty()const{ return nowlen == 0; };
     void clear();
+    
+    return_code insert(const T&, bool(*cmp)(const T&, const T&));//按序插入元素
     return_code insert(int pos, const T &item);
     return_code deletelemt(int pos, T &out);
     return_code retrieve(int pos, T &out)const;
     void traver(void(*visit)(const T&));
     int locate(T &item, bool(*cmp)(const T&, const T&))const;
     void unionlist(const slist<T> &s);
-    ~slist();
+    void ascendingsort();
+    void descendingsort();
+    
 private:
     T *elements;   //存放数据元素
     int nowlen;    //当前线性表的长度
@@ -157,5 +163,27 @@ void slist<T>::unionlist(const slist<T> &s){
         if(this->locate(temp,[](const T &e1, const T &e2)->bool{ return e1==e2; }) == -1){
             this->insert(nowlen, temp);
         }
+    }
+}
+
+template<class T>
+return_code slist<T>::insert(const T &item, bool(*cmp)(const T&, const T&)){
+    int i=0;
+    while(i<nowlen && !cmp(item, elements[i])) i++; //找到一个符合比较关系cmp的元素位置
+    
+    return insert(i, item);
+}
+
+template<class T>
+void slist<T>::ascendingsort(){
+    if(nowlen != 0){
+        sort(elements, elements+nowlen, [](const T &a, const T &b)->bool{ return a<b; });
+    }
+}
+
+template<class T>
+void slist<T>::descendingsort(){
+    if(nowlen != 0){
+        sort(elements, elements+nowlen, [](const T &a, const T&b)->bool{ return a>b; });
     }
 }

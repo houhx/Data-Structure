@@ -3,7 +3,7 @@
         "ostream": "cpp",
         "iostream": "cpp",
         "*.tcc": "cpp",
-        "type_traits": "cpp"
-    },
-    "C_Cpp.errorSquiggles": "Disabled"
+        "type_traits": "cpp",
+        "utility": "cpp"
+    }
 }

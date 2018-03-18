@@ -6,12 +6,14 @@
 #include "stack/link_stack.h"
 #include "list/link_list.h"
 #include "list/static_link_list.h"
+#include "list/sequence_list.h"
 
 void print(){
-	cout << "1.队列" << endl
+    cout << "1.队列" << endl
 	     << "2.栈"   << endl
 	     << "3.线性表" << endl
-	     << "4.退出" << endl;
+	     << "4.退出" << endl
+		 << "\n请输入相应功能序号：";
 }
 
 void printstack(){
@@ -87,21 +89,29 @@ void printsq(){
 }
 
 void printlist(){
-	cout << "1.单链表" << endl
-	     << "2.静态链表" << endl 
-	     << "3.返回"   << endl;
+	cout << "---------------------------" << endl 
+	     << "|	1.单链表" << endl 
+	     << "|	2.静态链表" << endl
+		 << "|	3.顺序线性表" << endl 
+	     << "|	4.返回"   << endl
+		 << "---------------------------" << endl
+		 << "\n请输入相应功能序号：";
 }
 
 void printllist(){
-	cout << "1.添加元素进表" << endl
-	     << "2.按升序添加元素进表" << endl
-		 << "3.按降序添加元素进表" << endl 
-		 << "4.删除指定位置元素"         << endl
-		 << "5.显示表中目前元素" << endl
-		 << "6.清空表"     << endl
-		 << "7.查看表中指定位置元素" << endl
-		 << "8.表当前大小" << endl 
-		 << "9.返回"         << endl;
+	cout << "-------------------------------------------" << endl
+	     << "|	1.添加元素进表,自动插入尾端"<< endl
+	     << "|	2.添加元素进表，并自动按升序排列"<< endl
+		 << "|	3.添加元素进表，并自动按降序排列"<< endl 
+		 << "|	4.向指定位置添加元素"<< endl
+		 << "|	5.删除指定位置元素"<< endl
+		 << "|	6.显示表中目前元素"<< endl
+		 << "|	7.清空表"<< endl
+		 << "|	8.查看表中指定位置元素"<< endl
+		 << "|	9.表当前大小"<< endl 
+		 << "|	10.返回"<< endl
+		 << "-------------------------------------------" << endl
+		 << "\n请输入相应功能序号：";
 }
 
 void printsllist(){
@@ -113,7 +123,24 @@ void printsllist(){
 		 << "6.清空表"     << endl
 		 << "7.查看表中指定位置元素" << endl
 		 << "8.表当前大小" << endl 
-		 << "9.返回"         << endl;
+		 << "9.返回"         << endl
+		 << "\n请输入相应功能序号：";
+}
+
+void printslist(){
+	cout << "-------------------------------------------" << endl
+	     << "|	1.添加元素进表,自动插入尾端"<< endl
+	     << "|	2.添加元素进表，并自动按升序排列"<< endl
+		 << "|	3.添加元素进表，并自动按降序排列"<< endl 
+		 << "|	4.向指定位置添加元素"<< endl
+		 << "|	5.删除指定位置元素"<< endl
+		 << "|	6.显示表中目前元素"<< endl
+		 << "|	7.清空表"<< endl
+		 << "|	8.查看表中指定位置元素"<< endl
+		 << "|	9.表当前大小"<< endl 
+		 << "|	10.返回"<< endl
+		 << "-------------------------------------------" << endl
+		 << "\n请输入相应功能序号：";
 }
 
 void test(){
@@ -550,102 +577,147 @@ void test(){
 			case 3:{                                     //线性表 
 		    	system_return = system("clear");
 		        printlist();
-				while((cin >> type) && type != 3){
+				while((cin >> type) && type != 4){
 					switch(type){
 					    case 1: {                    //单链表 
 					        system_return = system("clear");
 					        printllist();
 		                    linklist<int> ll;
-		                    while((cin >> type) && type != 9){
+		                    while((cin >> type) && type != 10){
 							    switch(type){
 								    case 1: {
-								    	cout << "\n\n请依次输入你要添加的元素，用空格分开：\n"; 
+								    	cout << "\n请依次输入你要添加的元素，用空格分开,回车结束：\n";
+
 								        while(cin >> type){
-								            ll.insert(type, ll.size()+1);
+								            if(ll.insert(ll.size(), type) == Range_error){
+												cout << "range_error!" << endl;
+											}
 								            if(cin.get() == '\n') break;
 										}
-										cout << "\n添加完成！\n" << endl;
+
+										cout << "\n添加完成!\n"    << endl;
 										
 										printllist();
 										break;
 									}
 													
 									case 2: {
-									    cout << "\n\n请依次输入你要添加的元素，用空格分开：\n"; 
+										ll.ascendingsort();
+									    cout << "\n请依次输入你要添加的元素，用空格分开,回车结束：\n";
+
 								        while(cin >> type){
-								            ll.insert(type, [](const int &a, const int &b)->bool{
-								            	return a>b;
-											});
+								            if(ll.insert(type, [](const int &a, const int &b)->bool{
+								            	return a<b;
+											}) == Range_error){
+												cout << "range_error!" << endl;
+											}
 								            if(cin.get() == '\n') break;
 										}
-										cout << "\n添加完成！\n" << endl;
+
+										cout << "\n添加完成!\n"    << endl;
 										
 										printllist();
 										break;
 									}
 									
 									case 3: {
-									    cout << "\n\n请依次输入你要添加的元素，用空格分开：\n"; 
+										ll.descendingsort();
+									    cout << "\n请依次输入你要添加的元素，用空格分开, 回车结束：\n";
+
 								        while(cin >> type){
-								            ll.insert(type, [](const int &a, const int &b)->bool{
-								            	return a<b;
-											});
+								            if(ll.insert(type, [](const int &a, const int &b)->bool{
+								            	return a>b;
+											}) == Range_error){
+												cout << "range_error!" << endl;
+											}
 								            if(cin.get() == '\n') break;
 										}
-										cout << "\n添加完成！\n" << endl;
+										
+										cout << "\n添加完成!\n"    << endl;
 										
 										printllist();
 										break;
 									}
 									
 									case 4: {
+										int pos = -1;
+										cout << "\n请输入您想插入元素的位置(0-" << ll.size() << "): ";
+										cin >> pos;
+										cout << "\n请输入您要插入的元素值： ";
+										cin >> type;
+
+										if(ll.insert(pos, type) == Range_error){
+											cout << "\n插入位置不合法!\n" << endl;
+										}
+										else{
+											cout << "\n插入成功！\n" << endl;
+										}
+
+										printllist();
+										break;
+									}
+
+									case 5: {
 										if(ll.empty()){
-											cout << "\n\n表是空表，无法进行删除操作！\n";
+											cout << "\n表是空表，无法进行删除操作！\n\n";
 											printllist();
 											break;
 										}
-										cout << "\n\n指出你要删除第几个元素（1-" << ll.size() << " ）：";
+										cout << "\n指出你要删除第几个元素（0-" << ll.size()-1 << " ）：";
 										cin >> type;
 										int save = 0;
 										ll.remove(type,save);
 										cout << "\n成功删除第"<< type << "个元素：" << save << endl;
+										cout << endl;
 										printllist();
 										break;
 									}
 											        
-									case 5: {
-										cout << "\n\n";
+									case 6: {
+										if(ll.empty()){
+											cout << "\n表为空！\n" << endl;
+											printllist();
+										    break;
+										}
+										cout << "\n";
 										ll.traver([](const int &e)->void{cout << e << "  ";});
 										cout << "\n\n";
 									    printllist();
 										break;   
 									}
 											
-									case 6: {
+									case 7: {
 										ll.clear();
-									    cout << "\n\n表已清空！\n" << endl;
+									    cout << "\n表已清空！\n" << endl;
 										printllist();
 										break;
 								    }
 											     
-									case 7: {
+									case 8: {
 										if(ll.empty()){
-											cout << "\n\n表是空表，无法进行查看操作！\n";
+											cout << "\n表是空表，无法进行查看操作！\n\n";
 											printllist();
 											break;
 										}
-										cout << "\n\n指出你要查看第几个元素（1-" << ll.size() << " ）：";
+										cout << "\n指出你要查看第几个元素（0-" << ll.size()-1 << " ）：";
 										cin >> type;
 										int save = 0;
 										ll.retrieve(type,save);
 										cout << "\n第"<< type << "个元素：" << save << endl;
+										cout << endl;
 										printllist();
 										break;
 									}
 											        
-									case 8: {
-										cout << "\n\n" << ll.size() << "\n\n";
+									case 9: {
+										cout << "\n表的长度： " << ll.size() << "\n\n";
 									    printllist();
+										break;
+									}
+
+									default: {
+										cout << "\n请输入正确的序号! \n\n";
+										printllist();
 										break;
 									}       		
 								}
@@ -669,7 +741,7 @@ void test(){
 										}
 										cout << "\n添加完成！\n" << endl;
 										
-										printllist();
+										printsllist();
 										break;
 									}
 													
@@ -683,7 +755,7 @@ void test(){
 										}
 										cout << "\n添加完成！\n" << endl;
 										
-										printllist();
+										printsllist();
 										break;
 									}
 									
@@ -697,7 +769,7 @@ void test(){
 										}
 										cout << "\n添加完成！\n" << endl;
 										
-										printllist();
+										printsllist();
 										break;
 									}
 									
@@ -712,7 +784,7 @@ void test(){
 										int save = 0;
 										sll.remove(type,save);
 										cout << "\n成功删除第"<< type << "个元素：" << save << endl;
-										printllist();
+										printsllist();
 										break;
 									}
 											        
@@ -720,14 +792,14 @@ void test(){
 										cout << "\n\n";
 										sll.traver([](const int &e)->void{cout << e << "  ";});
 										cout << "\n\n";
-									    printllist();
+									    printsllist();
 										break;   
 									}
 											
 									case 6: {
 										sll.clear();
 									    cout << "\n\n表已清空！\n" << endl;
-										printllist();
+										printsllist();
 										break;
 								    }
 											     
@@ -742,13 +814,13 @@ void test(){
 										int save = 0;
 										sll.retrieve(type,save);
 										cout << "\n第"<< type << "个元素：" << save << endl;
-										printllist();
+										printsllist();
 										break;
 									}
 											        
 									case 8: {
 										cout << "\n\n" << sll.size() << "\n\n";
-									    printllist();
+									    printsllist();
 										break;
 									}       		
 								}
@@ -756,7 +828,155 @@ void test(){
 							system_return = system("clear");
 							printlist();
 							break;
-					    }		  
+					    }
+
+						case 3: {                    //顺序线性表
+							system_return = system("clear");
+					        printslist();
+		                    slist<int> sl;
+		                    while((cin >> type) && type != 10){
+							    switch(type){
+								    case 1: {
+								    	cout << "\n请依次输入你要添加的元素，用空格分开,回车结束：\n";
+
+								        while(cin >> type){
+								            if(sl.insert(sl.getlen(), type) == Range_error){
+												cout << "range_error!" << endl;
+											}
+								            if(cin.get() == '\n') break;
+										}
+
+										cout << "\n添加完成!\n"    << endl;
+										
+										printslist();
+										break;
+									}
+													
+									case 2: {
+										sl.ascendingsort();
+									    cout << "\n请依次输入你要添加的元素，用空格分开,回车结束：\n";
+
+								        while(cin >> type){
+								            if(sl.insert(type, [](const int &a, const int &b)->bool{
+								            	return a<b;
+											}) == Range_error){
+												cout << "range_error!" << endl;
+											}
+								            if(cin.get() == '\n') break;
+										}
+
+										cout << "\n添加完成!\n"    << endl;
+										
+										printslist();
+										break;
+									}
+									
+									case 3: {
+										sl.descendingsort();
+									    cout << "\n请依次输入你要添加的元素，用空格分开, 回车结束：\n";
+
+								        while(cin >> type){
+								            if(sl.insert(type, [](const int &a, const int &b)->bool{
+								            	return a>b;
+											}) == Range_error){
+												cout << "range_error!" << endl;
+											}
+								            if(cin.get() == '\n') break;
+										}
+										
+										cout << "\n添加完成!\n"    << endl;
+										
+										printslist();
+										break;
+									}
+									
+									case 4: {
+										int pos = -1;
+										cout << "\n请输入您想插入元素的位置(0-" << sl.getlen() << "): ";
+										cin >> pos;
+										cout << "\n请输入您要插入的元素值： ";
+										cin >> type;
+
+										if(sl.insert(pos, type) == Range_error){
+											cout << "\n插入位置不合法!\n" << endl;
+										}
+										else{
+											cout << "\n插入成功！\n" << endl;
+										}
+
+										printslist();
+										break;
+									}
+
+									case 5: {
+										if(sl.empty()){
+											cout << "\n表是空表，无法进行删除操作！\n\n";
+											printslist();
+											break;
+										}
+										cout << "\n指出你要删除第几个元素（0-" << sl.getlen()-1 << " ）：";
+										cin >> type;
+										int save = 0;
+										sl.deletelemt(type,save);
+										cout << "\n成功删除第"<< type << "个元素：" << save << endl;
+										cout << endl;
+										printslist();
+										break;
+									}
+											        
+									case 6: {
+										if(sl.empty()){
+											cout << "\n表为空！\n" << endl;
+											printslist();
+										    break;
+										}
+										cout << "\n";
+										sl.traver([](const int &e)->void{cout << e << "  ";});
+										cout << "\n\n";
+									    printslist();
+										break;   
+									}
+											
+									case 7: {
+										sl.clear();
+									    cout << "\n表已清空！\n" << endl;
+										printslist();
+										break;
+								    }
+											     
+									case 8: {
+										if(sl.empty()){
+											cout << "\n表是空表，无法进行查看操作！\n\n";
+											printslist();
+											break;
+										}
+										cout << "\n指出你要查看第几个元素（0-" << sl.getlen()-1 << " ）：";
+										cin >> type;
+										int save = 0;
+										sl.retrieve(type,save);
+										cout << "\n第"<< type << "个元素：" << save << endl;
+										cout << endl;
+										printslist();
+										break;
+									}
+											        
+									case 9: {
+										cout << "\n表的长度： " << sl.getlen() << "\n\n";
+									    printslist();
+										break;
+									}
+
+									default: {
+										cout << "\n请输入正确的序号! \n\n";
+										printslist();
+										break;
+									}       		
+								}
+							}
+							system_return = system("clear");
+							printlist();
+							break;
+						}		  
 				    }
 				}
 				system_return = system("clear");
