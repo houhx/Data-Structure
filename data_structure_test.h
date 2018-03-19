@@ -9,39 +9,50 @@
 #include "list/sequence_list.h"
 
 void print(){
-    cout << "1.队列" << endl
-	     << "2.栈"   << endl
-	     << "3.线性表" << endl
-	     << "4.退出" << endl
+    cout << "--------------------------" << endl
+	     << "|	1.队列" << endl
+	     << "|	2.栈"   << endl
+	     << "|	3.线性表" << endl
+	     << "|	4.退出" << endl
+		 << "--------------------------"
 		 << "\n请输入相应功能序号：";
 }
 
 void printstack(){
-	cout << "1.顺序实现的栈" << endl
-	     << "2.链式栈"       << endl
-		 << "3.返回"         << endl; 
+	cout << "------------------------------" << endl
+	     << "|	1.顺序实现的栈" << endl
+	     << "|	2.链式栈"       << endl
+		 << "|	3.返回"         << endl
+		 << "------------------------------" << endl
+		 << "\n请输入相应功能序号：";
 }
 
 void printsstack(){
-	cout << "1.设置栈的容量" << endl
-	     << "2.进栈" << endl
-		 << "3.出栈"         << endl
-		 << "4.显示栈中目前元素" << endl
-		 << "5.清空栈"     << endl
-		 << "6.栈顶"       << endl
-		 << "7.栈的当前大小" << endl 
-		 << "8.栈的容量"   << endl 
-		 << "9.返回"         << endl;
+	cout << "------------------------------" << endl
+	     << "|	1.设置栈的容量" << endl
+	     << "|	2.进栈" << endl
+		 << "|	3.出栈"         << endl
+		 << "|	4.显示栈中目前元素" << endl
+		 << "|	5.清空栈"     << endl
+		 << "|	6.栈顶"       << endl
+		 << "|	7.栈的当前大小" << endl 
+		 << "|	8.栈的容量"   << endl 
+		 << "|	9.返回"         << endl
+		 << "------------------------------" << endl
+		 << "\n请输入相应功能序号：";
 }
 
 void printlstack(){
-	cout << "1.进栈" << endl
-		 << "2.出栈"         << endl
-		 << "3.显示栈中目前元素" << endl
-		 << "4.清空栈"     << endl
-		 << "5.栈顶"       << endl
-		 << "6.栈的当前大小" << endl 
-		 << "7.返回"         << endl;
+	cout << "----------------------------" << endl
+	     << "|	1.进栈" << endl
+		 << "|	2.出栈"         << endl
+		 << "|	3.显示栈中目前元素" << endl
+		 << "|	4.清空栈"     << endl
+		 << "|	5.栈顶"       << endl
+		 << "|	6.栈的当前大小" << endl 
+		 << "|	7.返回"         << endl
+		 << "----------------------------" << endl
+		 << "\n请输入相应功能序号：";
 }
 
 void printqueue(){
@@ -425,25 +436,30 @@ void test(){
 		        printstack();
 				while((cin >> type) && type != 3){
 					switch(type){
-					    case 1: {
+					    case 1: {                        //顺序栈
 					        system_return = system("clear");
 					        printsstack();
-		                    sstack ss;
+		                    sstack<int> ss;
 		                    while((cin >> type) && type != 9){
 							    switch(type){
 								    case 1: {
-								        cout << "\n\n目前大小为：" << ss.size() << endl
-								             << "容量为：" << ss.capacity() << endl
+								        cout << "\n目前大小为：" << ss.size() << endl
+								             << "容量为：" << ss.getcapacity() << endl
 										     << "请输入你要设置的容量：";
 								        cin >> type;
+										if(type < ss.size()){
+											cout << "\nerror! 设置的容量小于当前栈中元素数量。\n" << endl;
+											printsstack();
+											break;
+										}
 								        ss.setcapacity(type);
-								        cout << "\n设置成功！现在容量为：" << ss.capacity() << "\n\n";
+								        cout << "\n设置成功！现在容量为：" << ss.getcapacity() << "\n\n";
 								        printsstack();
 								        break;
 									}
 											
 								    case 2: {
-								    	cout << "\n\n请依次输入你要压入的元素，用空格分开：\n"; 
+								    	cout << "\n\n请依次输入你要压入的元素，用空格分开,回车结束：\n"; 
 								        while(cin >> type){
 								            ss.push(type);
 								            if(cin.get() == '\n') break;
@@ -463,8 +479,13 @@ void test(){
 									}
 											        
 									case 4: {
+										if(ss.empty()){
+											cout << "\n\n栈是空的！\n\n";
+											printsstack();
+											break;
+										}
 										cout << "\n\n";
-										ss.traver([](elemtype& e)->void{cout << e << "  ";});
+										ss.traver([](const int &e)->void{cout << e << "  ";});
 										cout << "\n\n";
 									    printsstack();
 										break;   
@@ -478,23 +499,29 @@ void test(){
 								    }
 											     
 									case 6: {
-										if(ss.empty()) cout << "\n\n栈是空的！\n";
+										if(ss.empty()) cout << "\n\n栈是空的！\n" << endl;
 										else{
 											ss.top(type);
-									        cout << "\n\n" << type << "\n\n";
+									        cout << "\n\n" << "栈顶元素为：" << type << "\n\n";
 										}
 										printsstack();
 										break;
 									}
 											        
 									case 7: {
-										cout << "\n\n" << ss.size() << "\n\n";
+										cout << "\n\n" << "栈的大小为： " << ss.size() << "\n\n";
 									    printsstack();
 										break;
 									}
 									
 									case 8: {
-										cout << "\n\n" << ss.capacity() << "\n\n";
+										cout << "\n\n" << "栈的容量为：" << ss.getcapacity() << "\n\n";
+										printsstack();
+										break;
+									}
+
+									default: {
+										cout << "\n\n请输入正确的序号！\n\n";
 										printsstack();
 										break;
 									}        		
@@ -505,14 +532,14 @@ void test(){
 							break;
 					    }
 					    
-					    case 2: {
+					    case 2: {                        //链式栈
 					    	system_return = system("clear");
 					        printlstack();
-		                    linkstack ls;
+		                    linkstack<int> ls;
 		                    while((cin >> type) && type != 7){
 							    switch(type){
 								    case 1: {
-								    	cout << "\n\n请依次输入你要压入的元素，用空格分开：\n"; 
+								    	cout << "\n\n请依次输入你要压入的元素，用空格分开,回车结束：\n"; 
 								        while(cin >> type){
 								            ls.push(type);
 								            if(cin.get() == '\n') break;
@@ -532,8 +559,13 @@ void test(){
 									}
 											        
 									case 3: {
+										if(ls.empty()){
+											cout << "\n\n栈是空的！\n\n";
+											printlstack();
+											break;
+										}
 										cout << "\n\n";
-										ls.traver([](elemtype& e)->void{cout << e << "  ";});
+										ls.traver([](const int &e)->void{cout << e << "  ";});
 										cout << "\n\n";
 									    printlstack();
 										break;   
@@ -547,18 +579,24 @@ void test(){
 								    }
 											     
 									case 5: {
-										if(ls.empty()) cout << "\n\n栈是空的！\n";
+										if(ls.empty()) cout << "\n\n栈是空的！\n\n";
 										else{
 											ls.top(type);
-									        cout << "\n\n" << type << "\n\n";
+									        cout << "\n\n" << "栈顶元素为：" << type << "\n\n";
 										}
 										printlstack();
 										break;
 									}
 											        
 									case 6: {
-										cout << "\n\n" << ls.size() << "\n\n";
+										cout << "\n\n" << "栈的大小：" << ls.size() << "\n\n";
 									    printlstack();
+										break;
+									}
+
+									default: {
+										cout << "\n\n请输入正确的序号！\n\n";
+										printllist();
 										break;
 									}       		
 								}

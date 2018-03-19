@@ -1,60 +1,73 @@
 ﻿#pragma once
 #include "../include.h"
 
-const int initcapacity = 10;
-const int increasement = 5;
+template<typename T>
 class sstack{
 public:	
-	sstack(int c = initcapacity);
+	sstack(int c = 10);
+	~sstack();
+
 	int size()const;
-	int capacity()const;
+	int getcapacity()const;
 	void setcapacity(int &n); 
 	bool empty()const;
 	void clear();
-	return_code push(elemtype &item);
-	return_code pop(elemtype &save);
-	return_code top(elemtype &save)const;
-	void traver(void(*visit)(elemtype&));
-	~sstack();
+	return_code push(const T &item);
+	return_code pop(T &out);
+	return_code top(T &out)const;
+	void traver(void(*visit)(const T&))const;
+	
 private:	
-	elemtype *elements;
+	T *elements;
 	int ptop;
-	int nowcapacity;
+	int capacity;
+	int increasement;
 };
 
-inline sstack::sstack(int c):nowcapacity(c){
-	elements = (elemtype*)malloc(sizeof(elemtype)*nowcapacity);
-	ptop = -1;
+template<typename T>
+inline sstack<T>::sstack(int c): ptop(-1), capacity(c), increasement(5){
+	elements = (T*)malloc(sizeof(T)*capacity);
 }
 
-inline sstack::~sstack(){
-	free(elements);
+template<typename T>
+inline sstack<T>::~sstack(){
+	if(elements){
+		free(elements);
+		elements = nullptr;
+	}
 }
 
-inline int sstack::size()const{
+template<typename T>
+inline int sstack<T>::size()const{
 	return ptop+1;
 }
 
-inline int sstack::capacity()const{
-	return nowcapacity;
+template<typename T>
+inline int sstack<T>::getcapacity()const{
+	return capacity;
 }
 
-inline void sstack::setcapacity(int &n){
-	nowcapacity = n;
+template<typename T>
+inline void sstack<T>::setcapacity(int &n){
+	capacity = n;
 }
 
-inline bool sstack::empty()const{
+template<typename T>
+inline bool sstack<T>::empty()const{
 	return ptop == -1;
 }
 
-inline void sstack::clear(){
+template<typename T>
+inline void sstack<T>::clear(){
+	for(int i=0; i<=ptop; i++) elements[i] = 0;
 	ptop = -1;
 }
 
-return_code sstack::push(elemtype &item){
-	if(ptop == nowcapacity-1){
-		nowcapacity += increasement;
-		elements = (elemtype*)realloc(elements, sizeof(elemtype)*nowcapacity);
+template<typename T>
+return_code sstack<T>::push(const T &item){
+	if(ptop == capacity-1){
+		capacity += increasement;
+		elements = (T*)realloc(elements, sizeof(T)*capacity);
 		if(!elements) return overflow;
 	}
 	
@@ -62,21 +75,24 @@ return_code sstack::push(elemtype &item){
 	return successful;
 }
 
-return_code sstack::pop(elemtype &save){
+template<typename T>
+return_code sstack<T>::pop(T &out){
 	if(ptop == -1) return underflow;
 	
-	save = elements[ptop--];
+	out = elements[ptop--];
 	return successful;
 }
 
-return_code sstack::top(elemtype &save)const{
+template<typename T>
+return_code sstack<T>::top(T &out)const{
 	if(ptop == -1) return underflow;
 	
-	save = elements[ptop];
+	out = elements[ptop];
 	return successful;
 }
 
-void sstack::traver(void(*visit)(elemtype&)){
+template<typename T>
+void sstack<T>::traver(void(*visit)(const T&))const{
 	for( int i=ptop; i>-1; i--){
 		visit(elements[i]);
 	}
