@@ -45,13 +45,12 @@ inline linkstack<T>::~linkstack(){
 template<typename T>
 linkstack<T>::linkstack(const linkstack<T> &ls){
 	if((nowsize = ls.size())){
-		T temp;
-		ls.top(temp);
-		sNode<T> *newhead = ptop = new sNode<T>(temp);
+		sNode<T> *newhead = ptop = new sNode<T>();
 		ls.traver([&](const T &s)->void{
 			newhead->next = new sNode<T>(s);
 			newhead = newhead->next; 
 		});
+		ptop = ptop->next;
 	}
 }
 
@@ -64,13 +63,12 @@ linkstack<T>& linkstack<T>::operator=(const linkstack<T> &ls){
 	else{
 		sNode<T> *todelete = ptop, *newnode;
 		
-		T temp;
-		ls.top(temp);
-		newnode = ptop = new sNode<T>(temp);
+		newnode = ptop = new sNode<T>();
 		ls.traver([&](const T &s)->void{
 			newnode->next = new sNode<T>(s);
 			newnode = newnode->next;
 		});
+		ptop = ptop->next;
 
 		while(todelete){
 			newnode = todelete;

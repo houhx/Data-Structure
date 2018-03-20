@@ -7,14 +7,16 @@
 #include "list/link_list.h"
 #include "list/static_link_list.h"
 #include "list/sequence_list.h"
+#include "tree/binary_tree.h"
 
 void print(){
     cout << "--------------------------" << endl
 	     << "|	1.队列" << endl
 	     << "|	2.栈"   << endl
 	     << "|	3.线性表" << endl
-	     << "|	4.退出" << endl
-		 << "--------------------------"
+	     << "|	4.树" << endl
+		 << "|	5.退出"<< endl
+		 << "--------------------------" << endl
 		 << "\n请输入相应功能序号：";
 }
 
@@ -56,47 +58,59 @@ void printlstack(){
 }
 
 void printqueue(){
-	cout << "1.循环队列" << endl
-		 << "2.链式队列" << endl
-		 << "3.头不动的顺序队列" << endl
-		 << "4.返回" << endl;
+	cout << "-------------------------" << endl
+	     << "|	1.循环队列" << endl
+		 << "|	2.链式队列" << endl
+		 << "|	3.头不动的顺序队列" << endl
+		 << "|	4.返回" << endl
+		 << "-------------------------" << endl
+		 << "\n请输入相应功能序号：" << endl;
 }
 
 void printcq(){
-	cout << "1.设置队列容量" << endl
-	     << "2.添加元素进队" << endl
-		 << "3.出队"         << endl
-		 << "4.显示队列中目前元素" << endl
-		 << "5.清空队列"     << endl
-		 << "6.队首"         << endl
-		 << "7.队尾"         << endl
-		 << "8.队列当前大小" << endl 
-		 << "9.队列的容量"   << endl 
-		 << "10.返回"         << endl;
+	cout << "--------------------------" << endl
+	     << "|	1.设置队列容量" << endl
+	     << "|	2.添加元素进队" << endl
+		 << "|	3.出队"         << endl
+		 << "|	4.显示队列中目前元素" << endl
+		 << "|	5.清空队列"     << endl
+		 << "|	6.队首"         << endl
+		 << "|	7.队尾"         << endl
+		 << "|	8.队列当前大小" << endl 
+		 << "|	9.队列的容量"   << endl 
+		 << "|	10.返回"         << endl
+		 << "--------------------------" << endl
+		 << "\n请输入相应功能序号：" << endl;
 }
 
 void printlq(){
-	cout << "1.添加元素进队" << endl
-		 << "2.出队"         << endl
-		 << "3.显示队列中目前元素" << endl
-		 << "4.清空队列"     << endl
-		 << "5.队首"         << endl
-		 << "6.队尾"         << endl
-		 << "7.队列当前大小" << endl 
-		 << "8.返回"         << endl;
+	cout << "-------------------------------" << endl
+	     << "|	1.添加元素进队" << endl
+		 << "|	2.出队"         << endl
+		 << "|	3.显示队列中目前元素" << endl
+		 << "|	4.清空队列"     << endl
+		 << "|	5.队首"         << endl
+		 << "|	6.队尾"         << endl
+		 << "|	7.队列当前大小" << endl 
+		 << "|	8.返回"         << endl
+		 << "-------------------------------" << endl
+		 << "\n请输入相应功能序号：" << endl;
 }
 
 void printsq(){
-	cout << "1.设置队列容量" << endl
-	     << "2.添加元素进队" << endl
-		 << "3.出队"         << endl
-		 << "4.显示队列中目前元素" << endl
-		 << "5.清空队列"     << endl
-		 << "6.队首"         << endl
-		 << "7.队尾"         << endl
-		 << "8.队列当前大小" << endl 
-		 << "9.队列的容量"   << endl 
-		 << "10.返回"         << endl;
+	cout << "----------------------------------" << endl
+	     << "|	1.设置队列容量" << endl
+	     << "|	2.添加元素进队" << endl
+		 << "|	3.出队"         << endl
+		 << "|	4.显示队列中目前元素" << endl
+		 << "|	5.清空队列"     << endl
+		 << "|	6.队首"         << endl
+		 << "|	7.队尾"         << endl
+		 << "|	8.队列当前大小" << endl 
+		 << "|	9.队列的容量"   << endl 
+		 << "|	10.返回"         << endl
+		 << "-----------------------------------" << endl
+		 << "\n请输入相应功能序号：" << endl;
 }
 
 void printlist(){
@@ -154,11 +168,31 @@ void printslist(){
 		 << "\n请输入相应功能序号：";
 }
 
+void printtree(){
+	cout << "--------------------" << endl
+	     << "|	1.二叉树" << endl
+		 << "|	2.退出"   << endl
+		 << "--------------------" << endl
+		 << "\n请输入相应功能序号：";
+}
+
+void printbitree(){
+	cout << "-------------------" << endl
+	     << "|	1.创建树" << endl
+		 << "|	2.树的总节点数" << endl
+		 << "|	3.先序" << endl
+		 << "|	4.中序" << endl
+		 << "|	5.后序" << endl
+		 << "|	6.返回"   << endl
+		 << "-------------------" << endl
+		 << "\n请输入相应功能序号：";
+}
+
 void test(){
 	int system_return = -1; //接收system()函数的返回值
 	print();
 	int type;
-	while((cin >> type) && type != 4){
+	while((cin >> type) && type != 5){
 		switch(type){
 		    case 1:{                                      //队列 
 		    	system_return = system("clear");
@@ -166,7 +200,7 @@ void test(){
 		        printqueue();
 				while((cin >> type) && type != 4){
 					switch(type){
-					    case 1: {
+					    case 1: {                       //循环队列
 					        system_return = system("clear");
 					        printcq();
 		                    cqueue cq;
@@ -262,14 +296,14 @@ void test(){
 							break;
 					    }
 					    
-					    case 2: {
+					    case 2: {                        //链式队列
 					        system_return = system("clear");
 					        printlq();
 		                    linkqueue<int> lq;
 		                    while((cin >> type) && type != 8){
 							    switch(type){			
 								    case 1: {
-								    	cout << "\n\n请依次输入你要添加的元素，并用空格隔开: \n"; 
+								    	cout << "\n\n请依次输入你要添加的元素，并用空格隔开,回车结束: \n"; 
 								        while(cin >> type){
 								            lq.push(type);
 								            if(cin.get() == '\n') break;
@@ -289,6 +323,11 @@ void test(){
 									}
 											        
 									case 3: {
+										if(lq.empty()){
+											cout << "\n\n队列是空的！\n\n";
+											printlq();
+											break;
+										}
 										cout << "\n\n";
 										lq.traver([](const int &e)->void{cout << e << "  ";});
 										cout << "\n\n";
@@ -304,28 +343,34 @@ void test(){
 								    }
 											     
 									case 5: {
-										if(lq.empty()) cout << "\n\n队列是空的！\n";
+										if(lq.empty()) cout << "\n\n队列是空的！\n\n";
 										else{
 											lq.front(type);
-									        cout << "\n\n" << type << "\n\n";
+									        cout << "\n\n" << "队首元素为：" << type << "\n\n";
 										}
 										printlq();
 										break;
 									}
 											        
 									case 6: {
-										if(lq.empty()) cout << "\n\n队列是空的！\n";
+										if(lq.empty()) cout << "\n\n队列是空的！\n\n";
 										else{
 											lq.back(type);
-									        cout << "\n\n" << type << "\n\n";
+									        cout << "\n\n" << "队尾元素为：" << type << "\n\n";
 										}
 										printlq();
 										break;
 									}
 											        
 									case 7: {
-										cout << "\n\n" << lq.size() << "\n\n";
+										cout << "\n\n" << "队列大小为：" << lq.size() << "\n\n";
 									    printlq();
+										break;
+									}
+
+									default: {
+										cout << "\n\n请输入正确的序号！\n\n";
+										printlq();
 										break;
 									}      		
 								}
@@ -335,7 +380,7 @@ void test(){
 							break;
 					    }
 						
-						case 3: {
+						case 3: {                        //顺序队列
 					        system_return = system("clear");
 					        printsq();
 		                    squeue sq;
@@ -1019,6 +1064,105 @@ void test(){
 				}
 				system_return = system("clear");
 				print();
+				break;
+			}
+
+			case 4:{                                     //树
+				system_return = system("clear");
+				printtree();
+				while((cin >> type) && type != 2){
+					switch(type){
+						case 1: {                //二叉树
+							system_return = system("clear");
+							printbitree();
+							bitree<int> bt;
+							while((cin >> type) && type != 6){
+								switch(type){
+									case 1: {
+										cout << endl << endl;
+										bt.createbitree_preorder();
+										cout << endl;
+										printbitree();
+										break;
+									}
+
+									case 2: {
+										cout << "\n\n树的总节点数为：" << bt.size() << "\n\n";
+										printbitree();
+										break;
+									}
+
+									case 3: {
+										if(bt.empty()){
+											cout << "\n\n树是空树\n\n";
+											printbitree();
+											break;
+										}
+										cout << "\n\n树的先序输出为：\n";
+										bt.preorder_traverse([](const int &t)->void{
+											cout << t << "  ";
+										});
+										cout << "\n\n";
+										printbitree();
+										break;
+									}
+
+									case 4: {
+										if(bt.empty()){
+											cout << "\n\n树是空树\n\n";
+											printbitree();
+											break;
+										}
+										cout << "\n\n树的中序输出为：\n";
+										bt.inorder_traverse([](const int &t)->void{
+											cout << t << "  ";
+										});
+										cout << "\n\n";
+										printbitree();
+										break;
+									}
+
+									case 5: {
+										if(bt.empty()){
+											cout << "\n\n树是空树\n\n";
+											printbitree();
+											break;
+										}
+										cout << "\n\n树的后序输出为：\n";
+										bt.postorder_traverse([](const int &t)->void{
+											cout << t << "  ";
+										});
+										cout << "\n\n";
+										printbitree();
+										break;
+									}
+
+									default: {
+										cout << "\n\n请输入正确序号！\n\n";
+										printbitree();
+										break;
+									}
+								}
+							}
+							system_return = system("clear");
+							printtree();
+							break;
+						}
+
+						default: {
+							cout << "\n\n请输入正确序号！\n\n";
+							printtree();
+							break;
+						}
+					}
+				}
+				system_return = system("clear");
+				print();
+				break;
+			}
+
+			default: {
+				cout << "\n\n请输入正确的序号！\n\n";
 				break;
 			} 						  
 	    }

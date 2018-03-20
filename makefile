@@ -1,4 +1,4 @@
-allh   = list/*.h queue/*.h stack/*.h *.h string/*.h matrix/*.h
+allh   = list/*.h queue/*.h stack/*.h *.h string/*.h matrix/*.h tree/*.h
 mancpp = man.cpp
 cflags = -Wall -O -g -std=c++11 
 
