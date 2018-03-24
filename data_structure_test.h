@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 #include "queue/sequence_queue.h"
 #include "queue/link_queue.h"
 #include "queue/circle_queue.h"
@@ -9,6 +9,7 @@
 #include "list/sequence_list.h"
 #include "tree/binary_tree.h"
 
+//data structure catalogs
 void print(){
     cout << "--------------------------" << endl
 	     << "|	1.队列" << endl
@@ -20,6 +21,7 @@ void print(){
 		 << "\n请输入相应功能序号：";
 }
 
+//stack classification
 void printstack(){
 	cout << "------------------------------" << endl
 	     << "|	1.顺序实现的栈" << endl
@@ -29,6 +31,7 @@ void printstack(){
 		 << "\n请输入相应功能序号：";
 }
 
+//function catalogs of sequence statck
 void printsstack(){
 	cout << "------------------------------" << endl
 	     << "|	1.设置栈的容量" << endl
@@ -44,6 +47,7 @@ void printsstack(){
 		 << "\n请输入相应功能序号：";
 }
 
+//function catalogs of link stack
 void printlstack(){
 	cout << "----------------------------" << endl
 	     << "|	1.进栈" << endl
@@ -57,6 +61,7 @@ void printlstack(){
 		 << "\n请输入相应功能序号：";
 }
 
+//queue claasification
 void printqueue(){
 	cout << "-------------------------" << endl
 	     << "|	1.循环队列" << endl
@@ -67,6 +72,7 @@ void printqueue(){
 		 << "\n请输入相应功能序号：" << endl;
 }
 
+//function catalogs of circle queue 
 void printcq(){
 	cout << "--------------------------" << endl
 	     << "|	1.设置队列容量" << endl
@@ -83,6 +89,7 @@ void printcq(){
 		 << "\n请输入相应功能序号：" << endl;
 }
 
+//function catalogs of link queue
 void printlq(){
 	cout << "-------------------------------" << endl
 	     << "|	1.添加元素进队" << endl
@@ -97,6 +104,7 @@ void printlq(){
 		 << "\n请输入相应功能序号：" << endl;
 }
 
+//function catalogs of sequence queue
 void printsq(){
 	cout << "----------------------------------" << endl
 	     << "|	1.设置队列容量" << endl
@@ -113,6 +121,7 @@ void printsq(){
 		 << "\n请输入相应功能序号：" << endl;
 }
 
+//list classification
 void printlist(){
 	cout << "---------------------------" << endl 
 	     << "|	1.单链表" << endl 
@@ -123,6 +132,7 @@ void printlist(){
 		 << "\n请输入相应功能序号：";
 }
 
+//function catalogs of link list
 void printllist(){
 	cout << "-------------------------------------------" << endl
 	     << "|	1.添加元素进表,自动插入尾端"<< endl
@@ -139,6 +149,7 @@ void printllist(){
 		 << "\n请输入相应功能序号：";
 }
 
+//function catalogs of static link list, implemetion by array
 void printsllist(){
 	cout << "1.添加元素进表" << endl
 	     << "2.按升序添加元素进表" << endl
@@ -152,6 +163,7 @@ void printsllist(){
 		 << "\n请输入相应功能序号：";
 }
 
+//function catalogs of sequence list
 void printslist(){
 	cout << "-------------------------------------------" << endl
 	     << "|	1.添加元素进表,自动插入尾端"<< endl
@@ -168,6 +180,7 @@ void printslist(){
 		 << "\n请输入相应功能序号：";
 }
 
+//tree classification
 void printtree(){
 	cout << "--------------------" << endl
 	     << "|	1.二叉树" << endl
@@ -176,6 +189,7 @@ void printtree(){
 		 << "\n请输入相应功能序号：";
 }
 
+//function catalogs of binary tree
 void printbitree(){
 	cout << "-------------------" << endl
 	     << "|	1.创建树" << endl
@@ -188,28 +202,36 @@ void printbitree(){
 		 << "\n请输入相应功能序号：";
 }
 
+//clear the screen
+void clearscreen(){
+ 	#ifdef _WIN32
+		system("cls");
+ 	#else
+		system("clear");
+ 	#endif
+}
+
+
 void test(){
-	int system_return = -1; //接收system()函数的返回值
 	print();
 	int type;
 	while((cin >> type) && type != 5){
 		switch(type){
 		    case 1:{                                      //队列 
-		    	system_return = system("clear");
-				if(system_return != 0) cout << "system command proccessor error!" << endl;
+				clearscreen();
 		        printqueue();
 				while((cin >> type) && type != 4){
 					switch(type){
 					    case 1: {                       //循环队列
-					        system_return = system("clear");
+					        clearscreen();
 					        printcq();
 		                    cqueue cq;
 		                    while((cin >> type) && type != 10){
 							    switch(type){
 								    case 1: {
 								        cout << "\n\n目前大小为：" << cq.size() << endl
-								             << "容量为：" << cq.capacity() << endl
-										     << "请输入你要设置的容量：";
+										     << "容量为：" << cq.capacity() << endl 
+											 << "请输入你要设置的容量：";
 								        cin >> type;
 								        cq.setcapacity(type+1);
 								        cout << "\n设置成功！现在容量为：" << cq.capacity() << "\n\n";
@@ -291,13 +313,13 @@ void test(){
 									}        		
 								}
 							}
-							system_return = system("clear");
+							clearscreen();
 							printqueue();
 							break;
 					    }
 					    
 					    case 2: {                        //链式队列
-					        system_return = system("clear");
+					        clearscreen();
 					        printlq();
 		                    linkqueue<int> lq;
 		                    while((cin >> type) && type != 8){
@@ -375,13 +397,13 @@ void test(){
 									}      		
 								}
 							}
-							system_return = system("clear");
+							clearscreen();
 							printqueue();
 							break;
 					    }
 						
 						case 3: {                        //顺序队列
-					        system_return = system("clear");
+					        clearscreen();
 					        printsq();
 		                    squeue sq;
 		                    while((cin >> type) && type != 10){
@@ -465,24 +487,24 @@ void test(){
 									}        		
 								}
 							}
-							system_return = system("clear");
+							clearscreen();
 							printqueue();
 							break;
 					    }		  
 				    }
 				}
-				system_return = system("clear");
+				clearscreen();
 				print();
 				break;
 			}
 			        
 	        case 2:{                                     //栈 
-		    	system_return = system("clear");
+		    	clearscreen();
 		        printstack();
 				while((cin >> type) && type != 3){
 					switch(type){
 					    case 1: {                        //顺序栈
-					        system_return = system("clear");
+					        clearscreen();
 					        printsstack();
 		                    sstack<int> ss;
 		                    while((cin >> type) && type != 9){
@@ -572,13 +594,13 @@ void test(){
 									}        		
 								}
 							}
-							system_return = system("clear");
+							clearscreen();
 							printstack();
 							break;
 					    }
 					    
 					    case 2: {                        //链式栈
-					    	system_return = system("clear");
+					    	clearscreen();
 					        printlstack();
 		                    linkstack<int> ls;
 		                    while((cin >> type) && type != 7){
@@ -646,24 +668,24 @@ void test(){
 									}       		
 								}
 							}
-							system_return = system("clear");
+							clearscreen();
 							printstack();
 							break;
 						}		  
 				    }
 				}
-				system_return = system("clear");
+				clearscreen();
 				print();
 				break;
 			}
 			
 			case 3:{                                     //线性表 
-		    	system_return = system("clear");
+		    	clearscreen();
 		        printlist();
 				while((cin >> type) && type != 4){
 					switch(type){
 					    case 1: {                    //单链表 
-					        system_return = system("clear");
+					        clearscreen();
 					        printllist();
 		                    linklist<int> ll;
 		                    while((cin >> type) && type != 10){
@@ -805,13 +827,13 @@ void test(){
 									}       		
 								}
 							}
-							system_return = system("clear");
+							clearscreen();
 							printlist();
 							break;
 					    }
 						
 						case 2: {                    //静态链表 
-					        system_return = system("clear");
+					        clearscreen();
 					        printsllist();
 		                    sllist<int> sll;
 		                    while((cin >> type) && type != 9){
@@ -908,13 +930,13 @@ void test(){
 									}       		
 								}
 							}
-							system_return = system("clear");
+							clearscreen();
 							printlist();
 							break;
 					    }
 
 						case 3: {                    //顺序线性表
-							system_return = system("clear");
+							clearscreen();
 					        printslist();
 		                    slist<int> sl;
 		                    while((cin >> type) && type != 10){
@@ -1056,24 +1078,24 @@ void test(){
 									}       		
 								}
 							}
-							system_return = system("clear");
+							clearscreen();
 							printlist();
 							break;
 						}		  
 				    }
 				}
-				system_return = system("clear");
+				clearscreen();
 				print();
 				break;
 			}
 
 			case 4:{                                     //树
-				system_return = system("clear");
+				clearscreen();
 				printtree();
 				while((cin >> type) && type != 2){
 					switch(type){
 						case 1: {                //二叉树
-							system_return = system("clear");
+							clearscreen();
 							printbitree();
 							bitree<int> bt;
 							while((cin >> type) && type != 6){
@@ -1144,7 +1166,7 @@ void test(){
 									}
 								}
 							}
-							system_return = system("clear");
+							clearscreen();
 							printtree();
 							break;
 						}
@@ -1156,7 +1178,7 @@ void test(){
 						}
 					}
 				}
-				system_return = system("clear");
+				clearscreen();
 				print();
 				break;
 			}

@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 #include "list/link_list.h"
 #include "queue/link_queue.h"
 #include <ctime>
