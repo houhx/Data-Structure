@@ -2,10 +2,10 @@
 #include "bank_queueing_problem.h"
 #include "string/sequence_string.h"
 #include "matrix/sparse_matrix.h"
+#include "graph/orthogonal_list_graph.h"
 
-int main(){
-	//bank_simulation();
-	test();
+void matrix_test_case(){
+	//matrix's test case
 	/*int m[6][7] = {{0,12,9,0,0,0,0},
 	               {0,0,0,0,0,0,0},
 				   {-3,0,0,0,0,14,0},
@@ -60,4 +60,16 @@ int main(){
 
 	multiplymatrix(r,m1,m2);
 	r.printm();*/
+}
+
+
+int main(){
+	//bank_simulation();
+
+	//test();
+
+	//matrix_test_case();
+
+	OLgraph<int, int> olg(4, 3);
+	getchar();
 }
