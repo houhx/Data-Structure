@@ -12,194 +12,194 @@
 //data structure catalogs
 void print(){
     cout << "--------------------------" << endl
-	     << "|	1.ÈòüÂàó" << endl
-	     << "|	2.Ê†à"   << endl
-	     << "|	3.Á∫øÊÄßË°®" << endl
-	     << "|	4.Ê†ë" << endl
-		 << "|	5.ÈÄÄÂá∫"<< endl
+	     << "|	1.∂”¡–" << endl
+	     << "|	2.’ª"   << endl
+	     << "|	3.œﬂ–‘±Ì" << endl
+	     << "|	4. ˜" << endl
+		 << "|	5.ÕÀ≥ˆ"<< endl
 		 << "--------------------------" << endl
-		 << "\nËØ∑ËæìÂÖ•Áõ∏Â∫îÂäüËÉΩÂ∫èÂè∑Ôºö";
+		 << "\n«Î ‰»Îœ‡”¶π¶ƒ‹–Ú∫≈£∫";
 }
 
 //stack classification
 void printstack(){
 	cout << "------------------------------" << endl
-	     << "|	1.È°∫Â∫èÂÆûÁé∞ÁöÑÊ†à" << endl
-	     << "|	2.ÈìæÂºèÊ†à"       << endl
-		 << "|	3.ËøîÂõû"         << endl
+	     << "|	1.À≥–Ú µœ÷µƒ’ª" << endl
+	     << "|	2.¡¥ Ω’ª"       << endl
+		 << "|	3.∑µªÿ"         << endl
 		 << "------------------------------" << endl
-		 << "\nËØ∑ËæìÂÖ•Áõ∏Â∫îÂäüËÉΩÂ∫èÂè∑Ôºö";
+		 << "\n«Î ‰»Îœ‡”¶π¶ƒ‹–Ú∫≈£∫";
 }
 
 //function catalogs of sequence statck
 void printsstack(){
 	cout << "------------------------------" << endl
-	     << "|	1.ËÆæÁΩÆÊ†àÁöÑÂÆπÈáè" << endl
-	     << "|	2.ËøõÊ†à" << endl
-		 << "|	3.Âá∫Ê†à"         << endl
-		 << "|	4.ÊòæÁ§∫Ê†à‰∏≠ÁõÆÂâçÂÖÉÁ¥†" << endl
-		 << "|	5.Ê∏ÖÁ©∫Ê†à"     << endl
-		 << "|	6.Ê†àÈ°∂"       << endl
-		 << "|	7.Ê†àÁöÑÂΩìÂâçÂ§ßÂ∞è" << endl 
-		 << "|	8.Ê†àÁöÑÂÆπÈáè"   << endl 
-		 << "|	9.ËøîÂõû"         << endl
+	     << "|	1.…Ë÷√’ªµƒ»›¡ø" << endl
+	     << "|	2.Ω¯’ª" << endl
+		 << "|	3.≥ˆ’ª"         << endl
+		 << "|	4.œ‘ æ’ª÷–ƒø«∞‘™Àÿ" << endl
+		 << "|	5.«Âø’’ª"     << endl
+		 << "|	6.’ª∂•"       << endl
+		 << "|	7.’ªµƒµ±«∞¥Û–°" << endl 
+		 << "|	8.’ªµƒ»›¡ø"   << endl 
+		 << "|	9.∑µªÿ"         << endl
 		 << "------------------------------" << endl
-		 << "\nËØ∑ËæìÂÖ•Áõ∏Â∫îÂäüËÉΩÂ∫èÂè∑Ôºö";
+		 << "\n«Î ‰»Îœ‡”¶π¶ƒ‹–Ú∫≈£∫";
 }
 
 //function catalogs of link stack
 void printlstack(){
 	cout << "----------------------------" << endl
-	     << "|	1.ËøõÊ†à" << endl
-		 << "|	2.Âá∫Ê†à"         << endl
-		 << "|	3.ÊòæÁ§∫Ê†à‰∏≠ÁõÆÂâçÂÖÉÁ¥†" << endl
-		 << "|	4.Ê∏ÖÁ©∫Ê†à"     << endl
-		 << "|	5.Ê†àÈ°∂"       << endl
-		 << "|	6.Ê†àÁöÑÂΩìÂâçÂ§ßÂ∞è" << endl 
-		 << "|	7.ËøîÂõû"         << endl
+	     << "|	1.Ω¯’ª" << endl
+		 << "|	2.≥ˆ’ª"         << endl
+		 << "|	3.œ‘ æ’ª÷–ƒø«∞‘™Àÿ" << endl
+		 << "|	4.«Âø’’ª"     << endl
+		 << "|	5.’ª∂•"       << endl
+		 << "|	6.’ªµƒµ±«∞¥Û–°" << endl 
+		 << "|	7.∑µªÿ"         << endl
 		 << "----------------------------" << endl
-		 << "\nËØ∑ËæìÂÖ•Áõ∏Â∫îÂäüËÉΩÂ∫èÂè∑Ôºö";
+		 << "\n«Î ‰»Îœ‡”¶π¶ƒ‹–Ú∫≈£∫";
 }
 
 //queue claasification
 void printqueue(){
 	cout << "-------------------------" << endl
-	     << "|	1.Âæ™ÁéØÈòüÂàó" << endl
-		 << "|	2.ÈìæÂºèÈòüÂàó" << endl
-		 << "|	3.Â§¥‰∏çÂä®ÁöÑÈ°∫Â∫èÈòüÂàó" << endl
-		 << "|	4.ËøîÂõû" << endl
+	     << "|	1.—≠ª∑∂”¡–" << endl
+		 << "|	2.¡¥ Ω∂”¡–" << endl
+		 << "|	3.Õ∑≤ª∂ØµƒÀ≥–Ú∂”¡–" << endl
+		 << "|	4.∑µªÿ" << endl
 		 << "-------------------------" << endl
-		 << "\nËØ∑ËæìÂÖ•Áõ∏Â∫îÂäüËÉΩÂ∫èÂè∑Ôºö" << endl;
+		 << "\n«Î ‰»Îœ‡”¶π¶ƒ‹–Ú∫≈£∫" << endl;
 }
 
 //function catalogs of circle queue 
 void printcq(){
 	cout << "--------------------------" << endl
-	     << "|	1.ËÆæÁΩÆÈòüÂàóÂÆπÈáè" << endl
-	     << "|	2.Ê∑ªÂä†ÂÖÉÁ¥†ËøõÈòü" << endl
-		 << "|	3.Âá∫Èòü"         << endl
-		 << "|	4.ÊòæÁ§∫ÈòüÂàó‰∏≠ÁõÆÂâçÂÖÉÁ¥†" << endl
-		 << "|	5.Ê∏ÖÁ©∫ÈòüÂàó"     << endl
-		 << "|	6.ÈòüÈ¶ñ"         << endl
-		 << "|	7.ÈòüÂ∞æ"         << endl
-		 << "|	8.ÈòüÂàóÂΩìÂâçÂ§ßÂ∞è" << endl 
-		 << "|	9.ÈòüÂàóÁöÑÂÆπÈáè"   << endl 
-		 << "|	10.ËøîÂõû"         << endl
+	     << "|	1.…Ë÷√∂”¡–»›¡ø" << endl
+	     << "|	2.ÃÌº”‘™ÀÿΩ¯∂”" << endl
+		 << "|	3.≥ˆ∂”"         << endl
+		 << "|	4.œ‘ æ∂”¡–÷–ƒø«∞‘™Àÿ" << endl
+		 << "|	5.«Âø’∂”¡–"     << endl
+		 << "|	6.∂” ◊"         << endl
+		 << "|	7.∂”Œ≤"         << endl
+		 << "|	8.∂”¡–µ±«∞¥Û–°" << endl 
+		 << "|	9.∂”¡–µƒ»›¡ø"   << endl 
+		 << "|	10.∑µªÿ"         << endl
 		 << "--------------------------" << endl
-		 << "\nËØ∑ËæìÂÖ•Áõ∏Â∫îÂäüËÉΩÂ∫èÂè∑Ôºö" << endl;
+		 << "\n«Î ‰»Îœ‡”¶π¶ƒ‹–Ú∫≈£∫" << endl;
 }
 
 //function catalogs of link queue
 void printlq(){
 	cout << "-------------------------------" << endl
-	     << "|	1.Ê∑ªÂä†ÂÖÉÁ¥†ËøõÈòü" << endl
-		 << "|	2.Âá∫Èòü"         << endl
-		 << "|	3.ÊòæÁ§∫ÈòüÂàó‰∏≠ÁõÆÂâçÂÖÉÁ¥†" << endl
-		 << "|	4.Ê∏ÖÁ©∫ÈòüÂàó"     << endl
-		 << "|	5.ÈòüÈ¶ñ"         << endl
-		 << "|	6.ÈòüÂ∞æ"         << endl
-		 << "|	7.ÈòüÂàóÂΩìÂâçÂ§ßÂ∞è" << endl 
-		 << "|	8.ËøîÂõû"         << endl
+	     << "|	1.ÃÌº”‘™ÀÿΩ¯∂”" << endl
+		 << "|	2.≥ˆ∂”"         << endl
+		 << "|	3.œ‘ æ∂”¡–÷–ƒø«∞‘™Àÿ" << endl
+		 << "|	4.«Âø’∂”¡–"     << endl
+		 << "|	5.∂” ◊"         << endl
+		 << "|	6.∂”Œ≤"         << endl
+		 << "|	7.∂”¡–µ±«∞¥Û–°" << endl 
+		 << "|	8.∑µªÿ"         << endl
 		 << "-------------------------------" << endl
-		 << "\nËØ∑ËæìÂÖ•Áõ∏Â∫îÂäüËÉΩÂ∫èÂè∑Ôºö" << endl;
+		 << "\n«Î ‰»Îœ‡”¶π¶ƒ‹–Ú∫≈£∫" << endl;
 }
 
 //function catalogs of sequence queue
 void printsq(){
 	cout << "----------------------------------" << endl
-	     << "|	1.ËÆæÁΩÆÈòüÂàóÂÆπÈáè" << endl
-	     << "|	2.Ê∑ªÂä†ÂÖÉÁ¥†ËøõÈòü" << endl
-		 << "|	3.Âá∫Èòü"         << endl
-		 << "|	4.ÊòæÁ§∫ÈòüÂàó‰∏≠ÁõÆÂâçÂÖÉÁ¥†" << endl
-		 << "|	5.Ê∏ÖÁ©∫ÈòüÂàó"     << endl
-		 << "|	6.ÈòüÈ¶ñ"         << endl
-		 << "|	7.ÈòüÂ∞æ"         << endl
-		 << "|	8.ÈòüÂàóÂΩìÂâçÂ§ßÂ∞è" << endl 
-		 << "|	9.ÈòüÂàóÁöÑÂÆπÈáè"   << endl 
-		 << "|	10.ËøîÂõû"         << endl
+	     << "|	1.…Ë÷√∂”¡–»›¡ø" << endl
+	     << "|	2.ÃÌº”‘™ÀÿΩ¯∂”" << endl
+		 << "|	3.≥ˆ∂”"         << endl
+		 << "|	4.œ‘ æ∂”¡–÷–ƒø«∞‘™Àÿ" << endl
+		 << "|	5.«Âø’∂”¡–"     << endl
+		 << "|	6.∂” ◊"         << endl
+		 << "|	7.∂”Œ≤"         << endl
+		 << "|	8.∂”¡–µ±«∞¥Û–°" << endl 
+		 << "|	9.∂”¡–µƒ»›¡ø"   << endl 
+		 << "|	10.∑µªÿ"         << endl
 		 << "-----------------------------------" << endl
-		 << "\nËØ∑ËæìÂÖ•Áõ∏Â∫îÂäüËÉΩÂ∫èÂè∑Ôºö" << endl;
+		 << "\n«Î ‰»Îœ‡”¶π¶ƒ‹–Ú∫≈£∫" << endl;
 }
 
 //list classification
 void printlist(){
 	cout << "---------------------------" << endl 
-	     << "|	1.ÂçïÈìæË°®" << endl 
-	     << "|	2.ÈùôÊÄÅÈìæË°®" << endl
-		 << "|	3.È°∫Â∫èÁ∫øÊÄßË°®" << endl 
-	     << "|	4.ËøîÂõû"   << endl
+	     << "|	1.µ•¡¥±Ì" << endl 
+	     << "|	2.æ≤Ã¨¡¥±Ì" << endl
+		 << "|	3.À≥–Úœﬂ–‘±Ì" << endl 
+	     << "|	4.∑µªÿ"   << endl
 		 << "---------------------------" << endl
-		 << "\nËØ∑ËæìÂÖ•Áõ∏Â∫îÂäüËÉΩÂ∫èÂè∑Ôºö";
+		 << "\n«Î ‰»Îœ‡”¶π¶ƒ‹–Ú∫≈£∫";
 }
 
 //function catalogs of link list
 void printllist(){
 	cout << "-------------------------------------------" << endl
-	     << "|	1.Ê∑ªÂä†ÂÖÉÁ¥†ËøõË°®,Ëá™Âä®ÊèíÂÖ•Â∞æÁ´Ø"<< endl
-	     << "|	2.Ê∑ªÂä†ÂÖÉÁ¥†ËøõË°®ÔºåÂπ∂Ëá™Âä®ÊåâÂçáÂ∫èÊéíÂàó"<< endl
-		 << "|	3.Ê∑ªÂä†ÂÖÉÁ¥†ËøõË°®ÔºåÂπ∂Ëá™Âä®ÊåâÈôçÂ∫èÊéíÂàó"<< endl 
-		 << "|	4.ÂêëÊåáÂÆö‰ΩçÁΩÆÊ∑ªÂä†ÂÖÉÁ¥†"<< endl
-		 << "|	5.Âà†Èô§ÊåáÂÆö‰ΩçÁΩÆÂÖÉÁ¥†"<< endl
-		 << "|	6.ÊòæÁ§∫Ë°®‰∏≠ÁõÆÂâçÂÖÉÁ¥†"<< endl
-		 << "|	7.Ê∏ÖÁ©∫Ë°®"<< endl
-		 << "|	8.Êü•ÁúãË°®‰∏≠ÊåáÂÆö‰ΩçÁΩÆÂÖÉÁ¥†"<< endl
-		 << "|	9.Ë°®ÂΩìÂâçÂ§ßÂ∞è"<< endl 
-		 << "|	10.ËøîÂõû"<< endl
+	     << "|	1.ÃÌº”‘™ÀÿΩ¯±Ì,◊‘∂Ø≤Â»ÎŒ≤∂À"<< endl
+	     << "|	2.ÃÌº”‘™ÀÿΩ¯±Ì£¨≤¢◊‘∂Ø∞¥…˝–Ú≈≈¡–"<< endl
+		 << "|	3.ÃÌº”‘™ÀÿΩ¯±Ì£¨≤¢◊‘∂Ø∞¥Ωµ–Ú≈≈¡–"<< endl 
+		 << "|	4.œÚ÷∏∂®Œª÷√ÃÌº”‘™Àÿ"<< endl
+		 << "|	5.…æ≥˝÷∏∂®Œª÷√‘™Àÿ"<< endl
+		 << "|	6.œ‘ æ±Ì÷–ƒø«∞‘™Àÿ"<< endl
+		 << "|	7.«Âø’±Ì"<< endl
+		 << "|	8.≤Èø¥±Ì÷–÷∏∂®Œª÷√‘™Àÿ"<< endl
+		 << "|	9.±Ìµ±«∞¥Û–°"<< endl 
+		 << "|	10.∑µªÿ"<< endl
 		 << "-------------------------------------------" << endl
-		 << "\nËØ∑ËæìÂÖ•Áõ∏Â∫îÂäüËÉΩÂ∫èÂè∑Ôºö";
+		 << "\n«Î ‰»Îœ‡”¶π¶ƒ‹–Ú∫≈£∫";
 }
 
 //function catalogs of static link list, implemetion by array
 void printsllist(){
-	cout << "1.Ê∑ªÂä†ÂÖÉÁ¥†ËøõË°®" << endl
-	     << "2.ÊåâÂçáÂ∫èÊ∑ªÂä†ÂÖÉÁ¥†ËøõË°®" << endl
-		 << "3.ÊåâÈôçÂ∫èÊ∑ªÂä†ÂÖÉÁ¥†ËøõË°®" << endl 
-		 << "4.Âà†Èô§ÊåáÂÆö‰ΩçÁΩÆÂÖÉÁ¥†"         << endl
-		 << "5.ÊòæÁ§∫Ë°®‰∏≠ÁõÆÂâçÂÖÉÁ¥†" << endl
-		 << "6.Ê∏ÖÁ©∫Ë°®"     << endl
-		 << "7.Êü•ÁúãË°®‰∏≠ÊåáÂÆö‰ΩçÁΩÆÂÖÉÁ¥†" << endl
-		 << "8.Ë°®ÂΩìÂâçÂ§ßÂ∞è" << endl 
-		 << "9.ËøîÂõû"         << endl
-		 << "\nËØ∑ËæìÂÖ•Áõ∏Â∫îÂäüËÉΩÂ∫èÂè∑Ôºö";
+	cout << "1.ÃÌº”‘™ÀÿΩ¯±Ì" << endl
+	     << "2.∞¥…˝–ÚÃÌº”‘™ÀÿΩ¯±Ì" << endl
+		 << "3.∞¥Ωµ–ÚÃÌº”‘™ÀÿΩ¯±Ì" << endl 
+		 << "4.…æ≥˝÷∏∂®Œª÷√‘™Àÿ"         << endl
+		 << "5.œ‘ æ±Ì÷–ƒø«∞‘™Àÿ" << endl
+		 << "6.«Âø’±Ì"     << endl
+		 << "7.≤Èø¥±Ì÷–÷∏∂®Œª÷√‘™Àÿ" << endl
+		 << "8.±Ìµ±«∞¥Û–°" << endl 
+		 << "9.∑µªÿ"         << endl
+		 << "\n«Î ‰»Îœ‡”¶π¶ƒ‹–Ú∫≈£∫";
 }
 
 //function catalogs of sequence list
 void printslist(){
 	cout << "-------------------------------------------" << endl
-	     << "|	1.Ê∑ªÂä†ÂÖÉÁ¥†ËøõË°®,Ëá™Âä®ÊèíÂÖ•Â∞æÁ´Ø"<< endl
-	     << "|	2.Ê∑ªÂä†ÂÖÉÁ¥†ËøõË°®ÔºåÂπ∂Ëá™Âä®ÊåâÂçáÂ∫èÊéíÂàó"<< endl
-		 << "|	3.Ê∑ªÂä†ÂÖÉÁ¥†ËøõË°®ÔºåÂπ∂Ëá™Âä®ÊåâÈôçÂ∫èÊéíÂàó"<< endl 
-		 << "|	4.ÂêëÊåáÂÆö‰ΩçÁΩÆÊ∑ªÂä†ÂÖÉÁ¥†"<< endl
-		 << "|	5.Âà†Èô§ÊåáÂÆö‰ΩçÁΩÆÂÖÉÁ¥†"<< endl
-		 << "|	6.ÊòæÁ§∫Ë°®‰∏≠ÁõÆÂâçÂÖÉÁ¥†"<< endl
-		 << "|	7.Ê∏ÖÁ©∫Ë°®"<< endl
-		 << "|	8.Êü•ÁúãË°®‰∏≠ÊåáÂÆö‰ΩçÁΩÆÂÖÉÁ¥†"<< endl
-		 << "|	9.Ë°®ÂΩìÂâçÂ§ßÂ∞è"<< endl 
-		 << "|	10.ËøîÂõû"<< endl
+	     << "|	1.ÃÌº”‘™ÀÿΩ¯±Ì,◊‘∂Ø≤Â»ÎŒ≤∂À"<< endl
+	     << "|	2.ÃÌº”‘™ÀÿΩ¯±Ì£¨≤¢◊‘∂Ø∞¥…˝–Ú≈≈¡–"<< endl
+		 << "|	3.ÃÌº”‘™ÀÿΩ¯±Ì£¨≤¢◊‘∂Ø∞¥Ωµ–Ú≈≈¡–"<< endl 
+		 << "|	4.œÚ÷∏∂®Œª÷√ÃÌº”‘™Àÿ"<< endl
+		 << "|	5.…æ≥˝÷∏∂®Œª÷√‘™Àÿ"<< endl
+		 << "|	6.œ‘ æ±Ì÷–ƒø«∞‘™Àÿ"<< endl
+		 << "|	7.«Âø’±Ì"<< endl
+		 << "|	8.≤Èø¥±Ì÷–÷∏∂®Œª÷√‘™Àÿ"<< endl
+		 << "|	9.±Ìµ±«∞¥Û–°"<< endl 
+		 << "|	10.∑µªÿ"<< endl
 		 << "-------------------------------------------" << endl
-		 << "\nËØ∑ËæìÂÖ•Áõ∏Â∫îÂäüËÉΩÂ∫èÂè∑Ôºö";
+		 << "\n«Î ‰»Îœ‡”¶π¶ƒ‹–Ú∫≈£∫";
 }
 
 //tree classification
 void printtree(){
 	cout << "--------------------" << endl
-	     << "|	1.‰∫åÂèâÊ†ë" << endl
-		 << "|	2.ÈÄÄÂá∫"   << endl
+	     << "|	1.∂˛≤Ê ˜" << endl
+		 << "|	2.ÕÀ≥ˆ"   << endl
 		 << "--------------------" << endl
-		 << "\nËØ∑ËæìÂÖ•Áõ∏Â∫îÂäüËÉΩÂ∫èÂè∑Ôºö";
+		 << "\n«Î ‰»Îœ‡”¶π¶ƒ‹–Ú∫≈£∫";
 }
 
 //function catalogs of binary tree
 void printbitree(){
 	cout << "-------------------" << endl
-	     << "|	1.ÂàõÂª∫Ê†ë" << endl
-		 << "|	2.Ê†ëÁöÑÊÄªËäÇÁÇπÊï∞" << endl
-		 << "|	3.ÂÖàÂ∫è" << endl
-		 << "|	4.‰∏≠Â∫è" << endl
-		 << "|	5.ÂêéÂ∫è" << endl
-		 << "|	6.ËøîÂõû"   << endl
+	     << "|	1.¥¥Ω® ˜" << endl
+		 << "|	2. ˜µƒ◊‹Ω⁄µ„ ˝" << endl
+		 << "|	3.œ»–Ú" << endl
+		 << "|	4.÷––Ú" << endl
+		 << "|	5.∫Û–Ú" << endl
+		 << "|	6.∑µªÿ"   << endl
 		 << "-------------------" << endl
-		 << "\nËØ∑ËæìÂÖ•Áõ∏Â∫îÂäüËÉΩÂ∫èÂè∑Ôºö";
+		 << "\n«Î ‰»Îœ‡”¶π¶ƒ‹–Ú∫≈£∫";
 }
 
 //clear the screen
@@ -217,24 +217,24 @@ void test(){
 	int type;
 	while((cin >> type) && type != 5){
 		switch(type){
-		    case 1:{                                      //ÈòüÂàó 
+		    case 1:{                                      //∂”¡– 
 				clearscreen();
 		        printqueue();
 				while((cin >> type) && type != 4){
 					switch(type){
-					    case 1: {                       //Âæ™ÁéØÈòüÂàó
+					    case 1: {                       //—≠ª∑∂”¡–
 					        clearscreen();
 					        printcq();
 		                    cqueue cq;
 		                    while((cin >> type) && type != 10){
 							    switch(type){
 								    case 1: {
-								        cout << "\n\nÁõÆÂâçÂ§ßÂ∞è‰∏∫Ôºö" << cq.size() << endl
-										     << "ÂÆπÈáè‰∏∫Ôºö" << cq.capacity() << endl 
-											 << "ËØ∑ËæìÂÖ•‰Ω†Ë¶ÅËÆæÁΩÆÁöÑÂÆπÈáèÔºö";
+								        cout << "\n\nƒø«∞¥Û–°Œ™£∫" << cq.size() << endl
+										     << "»›¡øŒ™£∫" << cq.capacity() << endl 
+											 << "«Î ‰»Îƒ„“™…Ë÷√µƒ»›¡ø£∫";
 								        cin >> type;
 								        cq.setcapacity(type+1);
-								        cout << "\nËÆæÁΩÆÊàêÂäüÔºÅÁé∞Âú®ÂÆπÈáè‰∏∫Ôºö" << cq.capacity() << "\n\n";
+								        cout << "\n…Ë÷√≥…π¶£°œ÷‘⁄»›¡øŒ™£∫" << cq.capacity() << "\n\n";
 								        printcq();
 								        break;
 									}
@@ -242,15 +242,15 @@ void test(){
 								    case 2: {
 								    	int remainder = cq.capacity()-cq.size();
 								    	
-								    	if(remainder == 0) cout << "\n\nÈòüÂàóÂ∑≤Êª°Ôºå‰∏çËÉΩÊ∑ªÂä†ÔºÅ\n\n";
+								    	if(remainder == 0) cout << "\n\n∂”¡–“—¬˙£¨≤ªƒ‹ÃÌº”£°\n\n";
 								    	else{
-								    		cout << "\n\nÁõÆÂâçËøòËÉΩÊúÄÂ§öÊ∑ªÂä†" << remainder
-											     << "‰∏™ÂÖÉÁ¥†ÔºåËØ∑‰æùÊ¨°ËæìÂÖ•‰Ω†Ë¶ÅÊ∑ªÂä†ÁöÑÂÖÉÁ¥†ÔºåÂπ∂Áî®Á©∫Ê†ºÈöîÂºÄ: \n"; 
+								    		cout << "\n\nƒø«∞ªπƒ‹◊Ó∂‡ÃÌº”" << remainder
+											     << "∏ˆ‘™Àÿ£¨«Î“¿¥Œ ‰»Îƒ„“™ÃÌº”µƒ‘™Àÿ£¨≤¢”√ø’∏Ò∏Ùø™: \n"; 
 								            while(cin >> type){
 								                cq.push(type);
 								                if(cin.get() == '\n') break;
 										    }
-										    cout << "\nÊ∑ªÂä†ÂÆåÊàêÔºÅ\n" << endl;
+										    cout << "\nÃÌº”ÕÍ≥…£°\n" << endl;
 										}
 										
 										printcq();
@@ -259,8 +259,8 @@ void test(){
 													
 									case 3: {
 									    return_code rc = cq.pop(type);
-									    if(rc == underflow) cout << "\n\nÈòüÂàóÂ∑≤Á©∫ÔºÅ\n\n";
-									    else cout << "\n\nÂá∫ÈòüÂÖÉÁ¥†‰∏∫Ôºö" << type << "\n\n";
+									    if(rc == underflow) cout << "\n\n∂”¡–“—ø’£°\n\n";
+									    else cout << "\n\n≥ˆ∂”‘™ÀÿŒ™£∫" << type << "\n\n";
 										printcq();
 										break;
 									}
@@ -275,13 +275,13 @@ void test(){
 											
 									case 5: {
 										cq.clear();
-									    cout << "\n\nÈòüÂàóÂ∑≤Ê∏ÖÁ©∫ÔºÅ\n" << endl;
+									    cout << "\n\n∂”¡–“—«Âø’£°\n" << endl;
 										printcq();
 										break;
 								    }
 											     
 									case 6: {
-										if(cq.empty()) cout << "\n\nÈòüÂàóÊòØÁ©∫ÁöÑÔºÅ\n";
+										if(cq.empty()) cout << "\n\n∂”¡– «ø’µƒ£°\n";
 										else{
 											cq.front(type);
 									        cout << "\n\n" << type << "\n\n";
@@ -291,7 +291,7 @@ void test(){
 									}
 											        
 									case 7: {
-										if(cq.empty()) cout << "\n\nÈòüÂàóÊòØÁ©∫ÁöÑÔºÅ\n";
+										if(cq.empty()) cout << "\n\n∂”¡– «ø’µƒ£°\n";
 										else{
 											cq.back(type);
 									        cout << "\n\n" << type << "\n\n";
@@ -318,19 +318,19 @@ void test(){
 							break;
 					    }
 					    
-					    case 2: {                        //ÈìæÂºèÈòüÂàó
+					    case 2: {                        //¡¥ Ω∂”¡–
 					        clearscreen();
 					        printlq();
 		                    linkqueue<int> lq;
 		                    while((cin >> type) && type != 8){
 							    switch(type){			
 								    case 1: {
-								    	cout << "\n\nËØ∑‰æùÊ¨°ËæìÂÖ•‰Ω†Ë¶ÅÊ∑ªÂä†ÁöÑÂÖÉÁ¥†ÔºåÂπ∂Áî®Á©∫Ê†ºÈöîÂºÄ,ÂõûËΩ¶ÁªìÊùü: \n"; 
+								    	cout << "\n\n«Î“¿¥Œ ‰»Îƒ„“™ÃÌº”µƒ‘™Àÿ£¨≤¢”√ø’∏Ò∏Ùø™,ªÿ≥µΩ· ¯: \n"; 
 								        while(cin >> type){
 								            lq.push(type);
 								            if(cin.get() == '\n') break;
 										}
-										cout << "\nÊ∑ªÂä†ÂÆåÊàêÔºÅ\n" << endl;
+										cout << "\nÃÌº”ÕÍ≥…£°\n" << endl;
 								
 										printlq();
 										break;
@@ -338,15 +338,15 @@ void test(){
 													
 									case 2: {
 									    return_code rc = lq.pop(type);
-									    if(rc == underflow) cout << "\n\nÈòüÂàóÂ∑≤Á©∫ÔºÅ\n\n";
-									    else cout << "\n\nÂá∫ÈòüÂÖÉÁ¥†‰∏∫Ôºö" << type << "\n\n";
+									    if(rc == underflow) cout << "\n\n∂”¡–“—ø’£°\n\n";
+									    else cout << "\n\n≥ˆ∂”‘™ÀÿŒ™£∫" << type << "\n\n";
 										printlq();
 										break;
 									}
 											        
 									case 3: {
 										if(lq.empty()){
-											cout << "\n\nÈòüÂàóÊòØÁ©∫ÁöÑÔºÅ\n\n";
+											cout << "\n\n∂”¡– «ø’µƒ£°\n\n";
 											printlq();
 											break;
 										}
@@ -359,39 +359,39 @@ void test(){
 											
 									case 4: {
 										lq.clear();
-									    cout << "\n\nÈòüÂàóÂ∑≤Ê∏ÖÁ©∫ÔºÅ\n" << endl;
+									    cout << "\n\n∂”¡–“—«Âø’£°\n" << endl;
 										printlq();
 										break;
 								    }
 											     
 									case 5: {
-										if(lq.empty()) cout << "\n\nÈòüÂàóÊòØÁ©∫ÁöÑÔºÅ\n\n";
+										if(lq.empty()) cout << "\n\n∂”¡– «ø’µƒ£°\n\n";
 										else{
 											lq.front(type);
-									        cout << "\n\n" << "ÈòüÈ¶ñÂÖÉÁ¥†‰∏∫Ôºö" << type << "\n\n";
+									        cout << "\n\n" << "∂” ◊‘™ÀÿŒ™£∫" << type << "\n\n";
 										}
 										printlq();
 										break;
 									}
 											        
 									case 6: {
-										if(lq.empty()) cout << "\n\nÈòüÂàóÊòØÁ©∫ÁöÑÔºÅ\n\n";
+										if(lq.empty()) cout << "\n\n∂”¡– «ø’µƒ£°\n\n";
 										else{
 											lq.back(type);
-									        cout << "\n\n" << "ÈòüÂ∞æÂÖÉÁ¥†‰∏∫Ôºö" << type << "\n\n";
+									        cout << "\n\n" << "∂”Œ≤‘™ÀÿŒ™£∫" << type << "\n\n";
 										}
 										printlq();
 										break;
 									}
 											        
 									case 7: {
-										cout << "\n\n" << "ÈòüÂàóÂ§ßÂ∞è‰∏∫Ôºö" << lq.size() << "\n\n";
+										cout << "\n\n" << "∂”¡–¥Û–°Œ™£∫" << lq.size() << "\n\n";
 									    printlq();
 										break;
 									}
 
 									default: {
-										cout << "\n\nËØ∑ËæìÂÖ•Ê≠£Á°ÆÁöÑÂ∫èÂè∑ÔºÅ\n\n";
+										cout << "\n\n«Î ‰»Î’˝»∑µƒ–Ú∫≈£°\n\n";
 										printlq();
 										break;
 									}      		
@@ -402,30 +402,30 @@ void test(){
 							break;
 					    }
 						
-						case 3: {                        //È°∫Â∫èÈòüÂàó
+						case 3: {                        //À≥–Ú∂”¡–
 					        clearscreen();
 					        printsq();
 		                    squeue sq;
 		                    while((cin >> type) && type != 10){
 							    switch(type){
 								    case 1: {
-								        cout << "\n\nÁõÆÂâçÂ§ßÂ∞è‰∏∫Ôºö" << sq.size() << endl
-								             << "ÂÆπÈáè‰∏∫Ôºö" << sq.capacity() << endl
-										     << "ËØ∑ËæìÂÖ•‰Ω†Ë¶ÅËÆæÁΩÆÁöÑÂÆπÈáèÔºö";
+								        cout << "\n\nƒø«∞¥Û–°Œ™£∫" << sq.size() << endl
+								             << "»›¡øŒ™£∫" << sq.capacity() << endl
+										     << "«Î ‰»Îƒ„“™…Ë÷√µƒ»›¡ø£∫";
 								        cin >> type;
 								        sq.setcapacity(type);
-								        cout << "\nËÆæÁΩÆÊàêÂäüÔºÅÁé∞Âú®ÂÆπÈáè‰∏∫Ôºö" << sq.capacity() << "\n\n";
+								        cout << "\n…Ë÷√≥…π¶£°œ÷‘⁄»›¡øŒ™£∫" << sq.capacity() << "\n\n";
 								        printsq();
 								        break;
 									}
 											
 								    case 2: {
-								    	cout << "ËØ∑‰æùÊ¨°ËæìÂÖ•‰Ω†Ë¶ÅÊ∑ªÂä†ÁöÑÂÖÉÁ¥†ÔºåÂπ∂Áî®Á©∫Ê†ºÈöîÂºÄ: \n"; 
+								    	cout << "«Î“¿¥Œ ‰»Îƒ„“™ÃÌº”µƒ‘™Àÿ£¨≤¢”√ø’∏Ò∏Ùø™: \n"; 
 								        while(cin >> type){
 								            sq.push(type);
 								            if(cin.get() == '\n') break;
 										}
-										cout << "\nÊ∑ªÂä†ÂÆåÊàêÔºÅ\n" << endl;
+										cout << "\nÃÌº”ÕÍ≥…£°\n" << endl;
 										
 										printsq();
 										break;
@@ -433,8 +433,8 @@ void test(){
 													
 									case 3: {
 									    return_code rc = sq.pop(type);
-									    if(rc == underflow) cout << "\n\nÈòüÂàóÂ∑≤Á©∫ÔºÅ\n\n";
-									    else cout << "\n\nÂá∫ÈòüÂÖÉÁ¥†‰∏∫Ôºö" << type << "\n\n";
+									    if(rc == underflow) cout << "\n\n∂”¡–“—ø’£°\n\n";
+									    else cout << "\n\n≥ˆ∂”‘™ÀÿŒ™£∫" << type << "\n\n";
 										printsq();
 										break;
 									}
@@ -449,13 +449,13 @@ void test(){
 											
 									case 5: {
 										sq.clear();
-									    cout << "\n\nÈòüÂàóÂ∑≤Ê∏ÖÁ©∫ÔºÅ\n" << endl;
+									    cout << "\n\n∂”¡–“—«Âø’£°\n" << endl;
 										printsq();
 										break;
 								    }
 											     
 									case 6: {
-										if(sq.empty()) cout << "\n\nÈòüÂàóÊòØÁ©∫ÁöÑÔºÅ\n";
+										if(sq.empty()) cout << "\n\n∂”¡– «ø’µƒ£°\n";
 										else{
 											sq.front(type);
 									        cout << "\n\n" << type << "\n\n";
@@ -465,7 +465,7 @@ void test(){
 									}
 											        
 									case 7: {
-										if(sq.empty()) cout << "\n\nÈòüÂàóÊòØÁ©∫ÁöÑÔºÅ\n";
+										if(sq.empty()) cout << "\n\n∂”¡– «ø’µƒ£°\n";
 										else{
 											sq.back(type);
 									        cout << "\n\n" << type << "\n\n";
@@ -498,40 +498,40 @@ void test(){
 				break;
 			}
 			        
-	        case 2:{                                     //Ê†à 
+	        case 2:{                                     //’ª 
 		    	clearscreen();
 		        printstack();
 				while((cin >> type) && type != 3){
 					switch(type){
-					    case 1: {                        //È°∫Â∫èÊ†à
+					    case 1: {                        //À≥–Ú’ª
 					        clearscreen();
 					        printsstack();
 		                    sstack<int> ss;
 		                    while((cin >> type) && type != 9){
 							    switch(type){
 								    case 1: {
-								        cout << "\nÁõÆÂâçÂ§ßÂ∞è‰∏∫Ôºö" << ss.size() << endl
-								             << "ÂÆπÈáè‰∏∫Ôºö" << ss.getcapacity() << endl
-										     << "ËØ∑ËæìÂÖ•‰Ω†Ë¶ÅËÆæÁΩÆÁöÑÂÆπÈáèÔºö";
+								        cout << "\nƒø«∞¥Û–°Œ™£∫" << ss.size() << endl
+								             << "»›¡øŒ™£∫" << ss.getcapacity() << endl
+										     << "«Î ‰»Îƒ„“™…Ë÷√µƒ»›¡ø£∫";
 								        cin >> type;
 										if(type < ss.size()){
-											cout << "\nerror! ËÆæÁΩÆÁöÑÂÆπÈáèÂ∞è‰∫éÂΩìÂâçÊ†à‰∏≠ÂÖÉÁ¥†Êï∞Èáè„ÄÇ\n" << endl;
+											cout << "\nerror! …Ë÷√µƒ»›¡ø–°”⁄µ±«∞’ª÷–‘™Àÿ ˝¡ø°£\n" << endl;
 											printsstack();
 											break;
 										}
 								        ss.setcapacity(type);
-								        cout << "\nËÆæÁΩÆÊàêÂäüÔºÅÁé∞Âú®ÂÆπÈáè‰∏∫Ôºö" << ss.getcapacity() << "\n\n";
+								        cout << "\n…Ë÷√≥…π¶£°œ÷‘⁄»›¡øŒ™£∫" << ss.getcapacity() << "\n\n";
 								        printsstack();
 								        break;
 									}
 											
 								    case 2: {
-								    	cout << "\n\nËØ∑‰æùÊ¨°ËæìÂÖ•‰Ω†Ë¶ÅÂéãÂÖ•ÁöÑÂÖÉÁ¥†ÔºåÁî®Á©∫Ê†ºÂàÜÂºÄ,ÂõûËΩ¶ÁªìÊùüÔºö\n"; 
+								    	cout << "\n\n«Î“¿¥Œ ‰»Îƒ„“™—π»Îµƒ‘™Àÿ£¨”√ø’∏Ò∑÷ø™,ªÿ≥µΩ· ¯£∫\n"; 
 								        while(cin >> type){
 								            ss.push(type);
 								            if(cin.get() == '\n') break;
 										}
-										cout << "\nÊ∑ªÂä†ÂÆåÊàêÔºÅ\n" << endl;
+										cout << "\nÃÌº”ÕÍ≥…£°\n" << endl;
 										
 										printsstack();
 										break;
@@ -539,15 +539,15 @@ void test(){
 													
 									case 3: {
 									    return_code rc = ss.pop(type);
-									    if(rc == underflow) cout << "\n\nÊ†àÂ∑≤Á©∫ÔºÅ\n\n";
-									    else cout << "\n\nÂá∫Ê†àÂÖÉÁ¥†‰∏∫Ôºö" << type << "\n\n";
+									    if(rc == underflow) cout << "\n\n’ª“—ø’£°\n\n";
+									    else cout << "\n\n≥ˆ’ª‘™ÀÿŒ™£∫" << type << "\n\n";
 										printsstack();
 										break;
 									}
 											        
 									case 4: {
 										if(ss.empty()){
-											cout << "\n\nÊ†àÊòØÁ©∫ÁöÑÔºÅ\n\n";
+											cout << "\n\n’ª «ø’µƒ£°\n\n";
 											printsstack();
 											break;
 										}
@@ -560,35 +560,35 @@ void test(){
 											
 									case 5: {
 										ss.clear();
-									    cout << "\n\nÊ†àÂ∑≤Ê∏ÖÁ©∫ÔºÅ\n" << endl;
+									    cout << "\n\n’ª“—«Âø’£°\n" << endl;
 										printsstack();
 										break;
 								    }
 											     
 									case 6: {
-										if(ss.empty()) cout << "\n\nÊ†àÊòØÁ©∫ÁöÑÔºÅ\n" << endl;
+										if(ss.empty()) cout << "\n\n’ª «ø’µƒ£°\n" << endl;
 										else{
 											ss.top(type);
-									        cout << "\n\n" << "Ê†àÈ°∂ÂÖÉÁ¥†‰∏∫Ôºö" << type << "\n\n";
+									        cout << "\n\n" << "’ª∂•‘™ÀÿŒ™£∫" << type << "\n\n";
 										}
 										printsstack();
 										break;
 									}
 											        
 									case 7: {
-										cout << "\n\n" << "Ê†àÁöÑÂ§ßÂ∞è‰∏∫Ôºö " << ss.size() << "\n\n";
+										cout << "\n\n" << "’ªµƒ¥Û–°Œ™£∫ " << ss.size() << "\n\n";
 									    printsstack();
 										break;
 									}
 									
 									case 8: {
-										cout << "\n\n" << "Ê†àÁöÑÂÆπÈáè‰∏∫Ôºö" << ss.getcapacity() << "\n\n";
+										cout << "\n\n" << "’ªµƒ»›¡øŒ™£∫" << ss.getcapacity() << "\n\n";
 										printsstack();
 										break;
 									}
 
 									default: {
-										cout << "\n\nËØ∑ËæìÂÖ•Ê≠£Á°ÆÁöÑÂ∫èÂè∑ÔºÅ\n\n";
+										cout << "\n\n«Î ‰»Î’˝»∑µƒ–Ú∫≈£°\n\n";
 										printsstack();
 										break;
 									}        		
@@ -599,19 +599,19 @@ void test(){
 							break;
 					    }
 					    
-					    case 2: {                        //ÈìæÂºèÊ†à
+					    case 2: {                        //¡¥ Ω’ª
 					    	clearscreen();
 					        printlstack();
 		                    linkstack<int> ls;
 		                    while((cin >> type) && type != 7){
 							    switch(type){
 								    case 1: {
-								    	cout << "\n\nËØ∑‰æùÊ¨°ËæìÂÖ•‰Ω†Ë¶ÅÂéãÂÖ•ÁöÑÂÖÉÁ¥†ÔºåÁî®Á©∫Ê†ºÂàÜÂºÄ,ÂõûËΩ¶ÁªìÊùüÔºö\n"; 
+								    	cout << "\n\n«Î“¿¥Œ ‰»Îƒ„“™—π»Îµƒ‘™Àÿ£¨”√ø’∏Ò∑÷ø™,ªÿ≥µΩ· ¯£∫\n"; 
 								        while(cin >> type){
 								            ls.push(type);
 								            if(cin.get() == '\n') break;
 										}
-										cout << "\nÊ∑ªÂä†ÂÆåÊàêÔºÅ\n" << endl;
+										cout << "\nÃÌº”ÕÍ≥…£°\n" << endl;
 										
 										printlstack();
 										break;
@@ -619,15 +619,15 @@ void test(){
 													
 									case 2: {
 									    return_code rc = ls.pop(type);
-									    if(rc == underflow) cout << "\n\nÊ†àÂ∑≤Á©∫ÔºÅ\n\n";
-									    else cout << "\n\nÂá∫Ê†àÂÖÉÁ¥†‰∏∫Ôºö" << type << "\n\n";
+									    if(rc == underflow) cout << "\n\n’ª“—ø’£°\n\n";
+									    else cout << "\n\n≥ˆ’ª‘™ÀÿŒ™£∫" << type << "\n\n";
 										printlstack();
 										break;
 									}
 											        
 									case 3: {
 										if(ls.empty()){
-											cout << "\n\nÊ†àÊòØÁ©∫ÁöÑÔºÅ\n\n";
+											cout << "\n\n’ª «ø’µƒ£°\n\n";
 											printlstack();
 											break;
 										}
@@ -640,29 +640,29 @@ void test(){
 											
 									case 4: {
 										ls.clear();
-									    cout << "\n\nÊ†àÂ∑≤Ê∏ÖÁ©∫ÔºÅ\n" << endl;
+									    cout << "\n\n’ª“—«Âø’£°\n" << endl;
 										printlstack();
 										break;
 								    }
 											     
 									case 5: {
-										if(ls.empty()) cout << "\n\nÊ†àÊòØÁ©∫ÁöÑÔºÅ\n\n";
+										if(ls.empty()) cout << "\n\n’ª «ø’µƒ£°\n\n";
 										else{
 											ls.top(type);
-									        cout << "\n\n" << "Ê†àÈ°∂ÂÖÉÁ¥†‰∏∫Ôºö" << type << "\n\n";
+									        cout << "\n\n" << "’ª∂•‘™ÀÿŒ™£∫" << type << "\n\n";
 										}
 										printlstack();
 										break;
 									}
 											        
 									case 6: {
-										cout << "\n\n" << "Ê†àÁöÑÂ§ßÂ∞èÔºö" << ls.size() << "\n\n";
+										cout << "\n\n" << "’ªµƒ¥Û–°£∫" << ls.size() << "\n\n";
 									    printlstack();
 										break;
 									}
 
 									default: {
-										cout << "\n\nËØ∑ËæìÂÖ•Ê≠£Á°ÆÁöÑÂ∫èÂè∑ÔºÅ\n\n";
+										cout << "\n\n«Î ‰»Î’˝»∑µƒ–Ú∫≈£°\n\n";
 										printllist();
 										break;
 									}       		
@@ -679,19 +679,19 @@ void test(){
 				break;
 			}
 			
-			case 3:{                                     //Á∫øÊÄßË°® 
+			case 3:{                                     //œﬂ–‘±Ì 
 		    	clearscreen();
 		        printlist();
 				while((cin >> type) && type != 4){
 					switch(type){
-					    case 1: {                    //ÂçïÈìæË°® 
+					    case 1: {                    //µ•¡¥±Ì 
 					        clearscreen();
 					        printllist();
 		                    linklist<int> ll;
 		                    while((cin >> type) && type != 10){
 							    switch(type){
 								    case 1: {
-								    	cout << "\nËØ∑‰æùÊ¨°ËæìÂÖ•‰Ω†Ë¶ÅÊ∑ªÂä†ÁöÑÂÖÉÁ¥†ÔºåÁî®Á©∫Ê†ºÂàÜÂºÄ,ÂõûËΩ¶ÁªìÊùüÔºö\n";
+								    	cout << "\n«Î“¿¥Œ ‰»Îƒ„“™ÃÌº”µƒ‘™Àÿ£¨”√ø’∏Ò∑÷ø™,ªÿ≥µΩ· ¯£∫\n";
 
 								        while(cin >> type){
 								            if(ll.insert(ll.size(), type) == Range_error){
@@ -700,7 +700,7 @@ void test(){
 								            if(cin.get() == '\n') break;
 										}
 
-										cout << "\nÊ∑ªÂä†ÂÆåÊàê!\n"    << endl;
+										cout << "\nÃÌº”ÕÍ≥…!\n"    << endl;
 										
 										printllist();
 										break;
@@ -708,7 +708,7 @@ void test(){
 													
 									case 2: {
 										ll.ascendingsort();
-									    cout << "\nËØ∑‰æùÊ¨°ËæìÂÖ•‰Ω†Ë¶ÅÊ∑ªÂä†ÁöÑÂÖÉÁ¥†ÔºåÁî®Á©∫Ê†ºÂàÜÂºÄ,ÂõûËΩ¶ÁªìÊùüÔºö\n";
+									    cout << "\n«Î“¿¥Œ ‰»Îƒ„“™ÃÌº”µƒ‘™Àÿ£¨”√ø’∏Ò∑÷ø™,ªÿ≥µΩ· ¯£∫\n";
 
 								        while(cin >> type){
 								            if(ll.insert(type, [](const int &a, const int &b)->bool{
@@ -719,7 +719,7 @@ void test(){
 								            if(cin.get() == '\n') break;
 										}
 
-										cout << "\nÊ∑ªÂä†ÂÆåÊàê!\n"    << endl;
+										cout << "\nÃÌº”ÕÍ≥…!\n"    << endl;
 										
 										printllist();
 										break;
@@ -727,7 +727,7 @@ void test(){
 									
 									case 3: {
 										ll.descendingsort();
-									    cout << "\nËØ∑‰æùÊ¨°ËæìÂÖ•‰Ω†Ë¶ÅÊ∑ªÂä†ÁöÑÂÖÉÁ¥†ÔºåÁî®Á©∫Ê†ºÂàÜÂºÄ, ÂõûËΩ¶ÁªìÊùüÔºö\n";
+									    cout << "\n«Î“¿¥Œ ‰»Îƒ„“™ÃÌº”µƒ‘™Àÿ£¨”√ø’∏Ò∑÷ø™, ªÿ≥µΩ· ¯£∫\n";
 
 								        while(cin >> type){
 								            if(ll.insert(type, [](const int &a, const int &b)->bool{
@@ -738,7 +738,7 @@ void test(){
 								            if(cin.get() == '\n') break;
 										}
 										
-										cout << "\nÊ∑ªÂä†ÂÆåÊàê!\n"    << endl;
+										cout << "\nÃÌº”ÕÍ≥…!\n"    << endl;
 										
 										printllist();
 										break;
@@ -746,16 +746,16 @@ void test(){
 									
 									case 4: {
 										int pos = -1;
-										cout << "\nËØ∑ËæìÂÖ•ÊÇ®ÊÉ≥ÊèíÂÖ•ÂÖÉÁ¥†ÁöÑ‰ΩçÁΩÆ(0-" << ll.size() << "): ";
+										cout << "\n«Î ‰»Îƒ˙œÎ≤Â»Î‘™ÀÿµƒŒª÷√(0-" << ll.size() << "): ";
 										cin >> pos;
-										cout << "\nËØ∑ËæìÂÖ•ÊÇ®Ë¶ÅÊèíÂÖ•ÁöÑÂÖÉÁ¥†ÂÄºÔºö ";
+										cout << "\n«Î ‰»Îƒ˙“™≤Â»Îµƒ‘™Àÿ÷µ£∫ ";
 										cin >> type;
 
 										if(ll.insert(pos, type) == Range_error){
-											cout << "\nÊèíÂÖ•‰ΩçÁΩÆ‰∏çÂêàÊ≥ï!\n" << endl;
+											cout << "\n≤Â»ÎŒª÷√≤ª∫œ∑®!\n" << endl;
 										}
 										else{
-											cout << "\nÊèíÂÖ•ÊàêÂäüÔºÅ\n" << endl;
+											cout << "\n≤Â»Î≥…π¶£°\n" << endl;
 										}
 
 										printllist();
@@ -764,15 +764,15 @@ void test(){
 
 									case 5: {
 										if(ll.empty()){
-											cout << "\nË°®ÊòØÁ©∫Ë°®ÔºåÊó†Ê≥ïËøõË°åÂà†Èô§Êìç‰ΩúÔºÅ\n\n";
+											cout << "\n±Ì «ø’±Ì£¨Œﬁ∑®Ω¯––…æ≥˝≤Ÿ◊˜£°\n\n";
 											printllist();
 											break;
 										}
-										cout << "\nÊåáÂá∫‰Ω†Ë¶ÅÂà†Èô§Á¨¨Âá†‰∏™ÂÖÉÁ¥†Ôºà0-" << ll.size()-1 << " ÔºâÔºö";
+										cout << "\n÷∏≥ˆƒ„“™…æ≥˝µ⁄º∏∏ˆ‘™Àÿ£®0-" << ll.size()-1 << " £©£∫";
 										cin >> type;
 										int save = 0;
 										ll.remove(type,save);
-										cout << "\nÊàêÂäüÂà†Èô§Á¨¨"<< type << "‰∏™ÂÖÉÁ¥†Ôºö" << save << endl;
+										cout << "\n≥…π¶…æ≥˝µ⁄"<< type << "∏ˆ‘™Àÿ£∫" << save << endl;
 										cout << endl;
 										printllist();
 										break;
@@ -780,7 +780,7 @@ void test(){
 											        
 									case 6: {
 										if(ll.empty()){
-											cout << "\nË°®‰∏∫Á©∫ÔºÅ\n" << endl;
+											cout << "\n±ÌŒ™ø’£°\n" << endl;
 											printllist();
 										    break;
 										}
@@ -793,35 +793,35 @@ void test(){
 											
 									case 7: {
 										ll.clear();
-									    cout << "\nË°®Â∑≤Ê∏ÖÁ©∫ÔºÅ\n" << endl;
+									    cout << "\n±Ì“—«Âø’£°\n" << endl;
 										printllist();
 										break;
 								    }
 											     
 									case 8: {
 										if(ll.empty()){
-											cout << "\nË°®ÊòØÁ©∫Ë°®ÔºåÊó†Ê≥ïËøõË°åÊü•ÁúãÊìç‰ΩúÔºÅ\n\n";
+											cout << "\n±Ì «ø’±Ì£¨Œﬁ∑®Ω¯––≤Èø¥≤Ÿ◊˜£°\n\n";
 											printllist();
 											break;
 										}
-										cout << "\nÊåáÂá∫‰Ω†Ë¶ÅÊü•ÁúãÁ¨¨Âá†‰∏™ÂÖÉÁ¥†Ôºà0-" << ll.size()-1 << " ÔºâÔºö";
+										cout << "\n÷∏≥ˆƒ„“™≤Èø¥µ⁄º∏∏ˆ‘™Àÿ£®0-" << ll.size()-1 << " £©£∫";
 										cin >> type;
 										int save = 0;
 										ll.retrieve(type,save);
-										cout << "\nÁ¨¨"<< type << "‰∏™ÂÖÉÁ¥†Ôºö" << save << endl;
+										cout << "\nµ⁄"<< type << "∏ˆ‘™Àÿ£∫" << save << endl;
 										cout << endl;
 										printllist();
 										break;
 									}
 											        
 									case 9: {
-										cout << "\nË°®ÁöÑÈïøÂ∫¶Ôºö " << ll.size() << "\n\n";
+										cout << "\n±Ìµƒ≥§∂»£∫ " << ll.size() << "\n\n";
 									    printllist();
 										break;
 									}
 
 									default: {
-										cout << "\nËØ∑ËæìÂÖ•Ê≠£Á°ÆÁöÑÂ∫èÂè∑! \n\n";
+										cout << "\n«Î ‰»Î’˝»∑µƒ–Ú∫≈! \n\n";
 										printllist();
 										break;
 									}       		
@@ -832,47 +832,47 @@ void test(){
 							break;
 					    }
 						
-						case 2: {                    //ÈùôÊÄÅÈìæË°® 
+						case 2: {                    //æ≤Ã¨¡¥±Ì 
 					        clearscreen();
 					        printsllist();
 		                    sllist<int> sll;
 		                    while((cin >> type) && type != 9){
 							    switch(type){
 								    case 1: {
-								    	cout << "\n\nËØ∑‰æùÊ¨°ËæìÂÖ•‰Ω†Ë¶ÅÊ∑ªÂä†ÁöÑÂÖÉÁ¥†ÔºåÁî®Á©∫Ê†ºÂàÜÂºÄÔºö\n"; 
+								    	cout << "\n\n«Î“¿¥Œ ‰»Îƒ„“™ÃÌº”µƒ‘™Àÿ£¨”√ø’∏Ò∑÷ø™£∫\n"; 
 								        while(cin >> type){
 								            sll.insert(type, sll.size()+1);
 								            if(cin.get() == '\n') break;
 										}
-										cout << "\nÊ∑ªÂä†ÂÆåÊàêÔºÅ\n" << endl;
+										cout << "\nÃÌº”ÕÍ≥…£°\n" << endl;
 										
 										printsllist();
 										break;
 									}
 													
 									case 2: {
-									    cout << "\n\nËØ∑‰æùÊ¨°ËæìÂÖ•‰Ω†Ë¶ÅÊ∑ªÂä†ÁöÑÂÖÉÁ¥†ÔºåÁî®Á©∫Ê†ºÂàÜÂºÄÔºö\n"; 
+									    cout << "\n\n«Î“¿¥Œ ‰»Îƒ„“™ÃÌº”µƒ‘™Àÿ£¨”√ø’∏Ò∑÷ø™£∫\n"; 
 								        while(cin >> type){
 								            sll.insert(type, [](const int &a, const int &b)->bool{
 								            	return a>b;
 											});
 								            if(cin.get() == '\n') break;
 										}
-										cout << "\nÊ∑ªÂä†ÂÆåÊàêÔºÅ\n" << endl;
+										cout << "\nÃÌº”ÕÍ≥…£°\n" << endl;
 										
 										printsllist();
 										break;
 									}
 									
 									case 3: {
-									    cout << "\n\nËØ∑‰æùÊ¨°ËæìÂÖ•‰Ω†Ë¶ÅÊ∑ªÂä†ÁöÑÂÖÉÁ¥†ÔºåÁî®Á©∫Ê†ºÂàÜÂºÄÔºö\n"; 
+									    cout << "\n\n«Î“¿¥Œ ‰»Îƒ„“™ÃÌº”µƒ‘™Àÿ£¨”√ø’∏Ò∑÷ø™£∫\n"; 
 								        while(cin >> type){
 								            sll.insert(type, [](const int &a, const int &b)->bool{
 								            	return a<b;
 											});
 								            if(cin.get() == '\n') break;
 										}
-										cout << "\nÊ∑ªÂä†ÂÆåÊàêÔºÅ\n" << endl;
+										cout << "\nÃÌº”ÕÍ≥…£°\n" << endl;
 										
 										printsllist();
 										break;
@@ -880,15 +880,15 @@ void test(){
 									
 									case 4: {
 										if(sll.empty()){
-											cout << "\n\nË°®ÊòØÁ©∫Ë°®ÔºåÊó†Ê≥ïËøõË°åÂà†Èô§Êìç‰ΩúÔºÅ\n";
+											cout << "\n\n±Ì «ø’±Ì£¨Œﬁ∑®Ω¯––…æ≥˝≤Ÿ◊˜£°\n";
 											printllist();
 											break;
 										}
-										cout << "\n\nÊåáÂá∫‰Ω†Ë¶ÅÂà†Èô§Á¨¨Âá†‰∏™ÂÖÉÁ¥†Ôºà1-" << sll.size() << " ÔºâÔºö";
+										cout << "\n\n÷∏≥ˆƒ„“™…æ≥˝µ⁄º∏∏ˆ‘™Àÿ£®1-" << sll.size() << " £©£∫";
 										cin >> type;
 										int save = 0;
 										sll.remove(type,save);
-										cout << "\nÊàêÂäüÂà†Èô§Á¨¨"<< type << "‰∏™ÂÖÉÁ¥†Ôºö" << save << endl;
+										cout << "\n≥…π¶…æ≥˝µ⁄"<< type << "∏ˆ‘™Àÿ£∫" << save << endl;
 										printsllist();
 										break;
 									}
@@ -903,22 +903,22 @@ void test(){
 											
 									case 6: {
 										sll.clear();
-									    cout << "\n\nË°®Â∑≤Ê∏ÖÁ©∫ÔºÅ\n" << endl;
+									    cout << "\n\n±Ì“—«Âø’£°\n" << endl;
 										printsllist();
 										break;
 								    }
 											     
 									case 7: {
 										if(sll.empty()){
-											cout << "\n\nË°®ÊòØÁ©∫Ë°®ÔºåÊó†Ê≥ïËøõË°åÊü•ÁúãÊìç‰ΩúÔºÅ\n";
+											cout << "\n\n±Ì «ø’±Ì£¨Œﬁ∑®Ω¯––≤Èø¥≤Ÿ◊˜£°\n";
 											printllist();
 											break;
 										}
-										cout << "\n\nÊåáÂá∫‰Ω†Ë¶ÅÊü•ÁúãÁ¨¨Âá†‰∏™ÂÖÉÁ¥†Ôºà1-" << sll.size() << " ÔºâÔºö";
+										cout << "\n\n÷∏≥ˆƒ„“™≤Èø¥µ⁄º∏∏ˆ‘™Àÿ£®1-" << sll.size() << " £©£∫";
 										cin >> type;
 										int save = 0;
 										sll.retrieve(type,save);
-										cout << "\nÁ¨¨"<< type << "‰∏™ÂÖÉÁ¥†Ôºö" << save << endl;
+										cout << "\nµ⁄"<< type << "∏ˆ‘™Àÿ£∫" << save << endl;
 										printsllist();
 										break;
 									}
@@ -935,14 +935,14 @@ void test(){
 							break;
 					    }
 
-						case 3: {                    //È°∫Â∫èÁ∫øÊÄßË°®
+						case 3: {                    //À≥–Úœﬂ–‘±Ì
 							clearscreen();
 					        printslist();
 		                    slist<int> sl;
 		                    while((cin >> type) && type != 10){
 							    switch(type){
 								    case 1: {
-								    	cout << "\nËØ∑‰æùÊ¨°ËæìÂÖ•‰Ω†Ë¶ÅÊ∑ªÂä†ÁöÑÂÖÉÁ¥†ÔºåÁî®Á©∫Ê†ºÂàÜÂºÄ,ÂõûËΩ¶ÁªìÊùüÔºö\n";
+								    	cout << "\n«Î“¿¥Œ ‰»Îƒ„“™ÃÌº”µƒ‘™Àÿ£¨”√ø’∏Ò∑÷ø™,ªÿ≥µΩ· ¯£∫\n";
 
 								        while(cin >> type){
 								            if(sl.insert(sl.getlen(), type) == Range_error){
@@ -951,7 +951,7 @@ void test(){
 								            if(cin.get() == '\n') break;
 										}
 
-										cout << "\nÊ∑ªÂä†ÂÆåÊàê!\n"    << endl;
+										cout << "\nÃÌº”ÕÍ≥…!\n"    << endl;
 										
 										printslist();
 										break;
@@ -959,7 +959,7 @@ void test(){
 													
 									case 2: {
 										sl.ascendingsort();
-									    cout << "\nËØ∑‰æùÊ¨°ËæìÂÖ•‰Ω†Ë¶ÅÊ∑ªÂä†ÁöÑÂÖÉÁ¥†ÔºåÁî®Á©∫Ê†ºÂàÜÂºÄ,ÂõûËΩ¶ÁªìÊùüÔºö\n";
+									    cout << "\n«Î“¿¥Œ ‰»Îƒ„“™ÃÌº”µƒ‘™Àÿ£¨”√ø’∏Ò∑÷ø™,ªÿ≥µΩ· ¯£∫\n";
 
 								        while(cin >> type){
 								            if(sl.insert(type, [](const int &a, const int &b)->bool{
@@ -970,7 +970,7 @@ void test(){
 								            if(cin.get() == '\n') break;
 										}
 
-										cout << "\nÊ∑ªÂä†ÂÆåÊàê!\n"    << endl;
+										cout << "\nÃÌº”ÕÍ≥…!\n"    << endl;
 										
 										printslist();
 										break;
@@ -978,7 +978,7 @@ void test(){
 									
 									case 3: {
 										sl.descendingsort();
-									    cout << "\nËØ∑‰æùÊ¨°ËæìÂÖ•‰Ω†Ë¶ÅÊ∑ªÂä†ÁöÑÂÖÉÁ¥†ÔºåÁî®Á©∫Ê†ºÂàÜÂºÄ, ÂõûËΩ¶ÁªìÊùüÔºö\n";
+									    cout << "\n«Î“¿¥Œ ‰»Îƒ„“™ÃÌº”µƒ‘™Àÿ£¨”√ø’∏Ò∑÷ø™, ªÿ≥µΩ· ¯£∫\n";
 
 								        while(cin >> type){
 								            if(sl.insert(type, [](const int &a, const int &b)->bool{
@@ -989,7 +989,7 @@ void test(){
 								            if(cin.get() == '\n') break;
 										}
 										
-										cout << "\nÊ∑ªÂä†ÂÆåÊàê!\n"    << endl;
+										cout << "\nÃÌº”ÕÍ≥…!\n"    << endl;
 										
 										printslist();
 										break;
@@ -997,16 +997,16 @@ void test(){
 									
 									case 4: {
 										int pos = -1;
-										cout << "\nËØ∑ËæìÂÖ•ÊÇ®ÊÉ≥ÊèíÂÖ•ÂÖÉÁ¥†ÁöÑ‰ΩçÁΩÆ(0-" << sl.getlen() << "): ";
+										cout << "\n«Î ‰»Îƒ˙œÎ≤Â»Î‘™ÀÿµƒŒª÷√(0-" << sl.getlen() << "): ";
 										cin >> pos;
-										cout << "\nËØ∑ËæìÂÖ•ÊÇ®Ë¶ÅÊèíÂÖ•ÁöÑÂÖÉÁ¥†ÂÄºÔºö ";
+										cout << "\n«Î ‰»Îƒ˙“™≤Â»Îµƒ‘™Àÿ÷µ£∫ ";
 										cin >> type;
 
 										if(sl.insert(pos, type) == Range_error){
-											cout << "\nÊèíÂÖ•‰ΩçÁΩÆ‰∏çÂêàÊ≥ï!\n" << endl;
+											cout << "\n≤Â»ÎŒª÷√≤ª∫œ∑®!\n" << endl;
 										}
 										else{
-											cout << "\nÊèíÂÖ•ÊàêÂäüÔºÅ\n" << endl;
+											cout << "\n≤Â»Î≥…π¶£°\n" << endl;
 										}
 
 										printslist();
@@ -1015,15 +1015,15 @@ void test(){
 
 									case 5: {
 										if(sl.empty()){
-											cout << "\nË°®ÊòØÁ©∫Ë°®ÔºåÊó†Ê≥ïËøõË°åÂà†Èô§Êìç‰ΩúÔºÅ\n\n";
+											cout << "\n±Ì «ø’±Ì£¨Œﬁ∑®Ω¯––…æ≥˝≤Ÿ◊˜£°\n\n";
 											printslist();
 											break;
 										}
-										cout << "\nÊåáÂá∫‰Ω†Ë¶ÅÂà†Èô§Á¨¨Âá†‰∏™ÂÖÉÁ¥†Ôºà0-" << sl.getlen()-1 << " ÔºâÔºö";
+										cout << "\n÷∏≥ˆƒ„“™…æ≥˝µ⁄º∏∏ˆ‘™Àÿ£®0-" << sl.getlen()-1 << " £©£∫";
 										cin >> type;
 										int save = 0;
 										sl.deletelemt(type,save);
-										cout << "\nÊàêÂäüÂà†Èô§Á¨¨"<< type << "‰∏™ÂÖÉÁ¥†Ôºö" << save << endl;
+										cout << "\n≥…π¶…æ≥˝µ⁄"<< type << "∏ˆ‘™Àÿ£∫" << save << endl;
 										cout << endl;
 										printslist();
 										break;
@@ -1031,7 +1031,7 @@ void test(){
 											        
 									case 6: {
 										if(sl.empty()){
-											cout << "\nË°®‰∏∫Á©∫ÔºÅ\n" << endl;
+											cout << "\n±ÌŒ™ø’£°\n" << endl;
 											printslist();
 										    break;
 										}
@@ -1044,35 +1044,35 @@ void test(){
 											
 									case 7: {
 										sl.clear();
-									    cout << "\nË°®Â∑≤Ê∏ÖÁ©∫ÔºÅ\n" << endl;
+									    cout << "\n±Ì“—«Âø’£°\n" << endl;
 										printslist();
 										break;
 								    }
 											     
 									case 8: {
 										if(sl.empty()){
-											cout << "\nË°®ÊòØÁ©∫Ë°®ÔºåÊó†Ê≥ïËøõË°åÊü•ÁúãÊìç‰ΩúÔºÅ\n\n";
+											cout << "\n±Ì «ø’±Ì£¨Œﬁ∑®Ω¯––≤Èø¥≤Ÿ◊˜£°\n\n";
 											printslist();
 											break;
 										}
-										cout << "\nÊåáÂá∫‰Ω†Ë¶ÅÊü•ÁúãÁ¨¨Âá†‰∏™ÂÖÉÁ¥†Ôºà0-" << sl.getlen()-1 << " ÔºâÔºö";
+										cout << "\n÷∏≥ˆƒ„“™≤Èø¥µ⁄º∏∏ˆ‘™Àÿ£®0-" << sl.getlen()-1 << " £©£∫";
 										cin >> type;
 										int save = 0;
 										sl.retrieve(type,save);
-										cout << "\nÁ¨¨"<< type << "‰∏™ÂÖÉÁ¥†Ôºö" << save << endl;
+										cout << "\nµ⁄"<< type << "∏ˆ‘™Àÿ£∫" << save << endl;
 										cout << endl;
 										printslist();
 										break;
 									}
 											        
 									case 9: {
-										cout << "\nË°®ÁöÑÈïøÂ∫¶Ôºö " << sl.getlen() << "\n\n";
+										cout << "\n±Ìµƒ≥§∂»£∫ " << sl.getlen() << "\n\n";
 									    printslist();
 										break;
 									}
 
 									default: {
-										cout << "\nËØ∑ËæìÂÖ•Ê≠£Á°ÆÁöÑÂ∫èÂè∑! \n\n";
+										cout << "\n«Î ‰»Î’˝»∑µƒ–Ú∫≈! \n\n";
 										printslist();
 										break;
 									}       		
@@ -1089,12 +1089,12 @@ void test(){
 				break;
 			}
 
-			case 4:{                                     //Ê†ë
+			case 4:{                                     // ˜
 				clearscreen();
 				printtree();
 				while((cin >> type) && type != 2){
 					switch(type){
-						case 1: {                //‰∫åÂèâÊ†ë
+						case 1: {                //∂˛≤Ê ˜
 							clearscreen();
 							printbitree();
 							bitree<int> bt;
@@ -1109,18 +1109,18 @@ void test(){
 									}
 
 									case 2: {
-										cout << "\n\nÊ†ëÁöÑÊÄªËäÇÁÇπÊï∞‰∏∫Ôºö" << bt.size() << "\n\n";
+										cout << "\n\n ˜µƒ◊‹Ω⁄µ„ ˝Œ™£∫" << bt.size() << "\n\n";
 										printbitree();
 										break;
 									}
 
 									case 3: {
 										if(bt.empty()){
-											cout << "\n\nÊ†ëÊòØÁ©∫Ê†ë\n\n";
+											cout << "\n\n ˜ «ø’ ˜\n\n";
 											printbitree();
 											break;
 										}
-										cout << "\n\nÊ†ëÁöÑÂÖàÂ∫èËæìÂá∫‰∏∫Ôºö\n";
+										cout << "\n\n ˜µƒœ»–Ú ‰≥ˆŒ™£∫\n";
 										bt.preorder_traverse([](const int &t)->void{
 											cout << t << "  ";
 										});
@@ -1131,11 +1131,11 @@ void test(){
 
 									case 4: {
 										if(bt.empty()){
-											cout << "\n\nÊ†ëÊòØÁ©∫Ê†ë\n\n";
+											cout << "\n\n ˜ «ø’ ˜\n\n";
 											printbitree();
 											break;
 										}
-										cout << "\n\nÊ†ëÁöÑ‰∏≠Â∫èËæìÂá∫‰∏∫Ôºö\n";
+										cout << "\n\n ˜µƒ÷––Ú ‰≥ˆŒ™£∫\n";
 										bt.inorder_traverse([](const int &t)->void{
 											cout << t << "  ";
 										});
@@ -1146,11 +1146,11 @@ void test(){
 
 									case 5: {
 										if(bt.empty()){
-											cout << "\n\nÊ†ëÊòØÁ©∫Ê†ë\n\n";
+											cout << "\n\n ˜ «ø’ ˜\n\n";
 											printbitree();
 											break;
 										}
-										cout << "\n\nÊ†ëÁöÑÂêéÂ∫èËæìÂá∫‰∏∫Ôºö\n";
+										cout << "\n\n ˜µƒ∫Û–Ú ‰≥ˆŒ™£∫\n";
 										bt.postorder_traverse([](const int &t)->void{
 											cout << t << "  ";
 										});
@@ -1160,7 +1160,7 @@ void test(){
 									}
 
 									default: {
-										cout << "\n\nËØ∑ËæìÂÖ•Ê≠£Á°ÆÂ∫èÂè∑ÔºÅ\n\n";
+										cout << "\n\n«Î ‰»Î’˝»∑–Ú∫≈£°\n\n";
 										printbitree();
 										break;
 									}
@@ -1172,7 +1172,7 @@ void test(){
 						}
 
 						default: {
-							cout << "\n\nËØ∑ËæìÂÖ•Ê≠£Á°ÆÂ∫èÂè∑ÔºÅ\n\n";
+							cout << "\n\n«Î ‰»Î’˝»∑–Ú∫≈£°\n\n";
 							printtree();
 							break;
 						}
@@ -1184,7 +1184,7 @@ void test(){
 			}
 
 			default: {
-				cout << "\n\nËØ∑ËæìÂÖ•Ê≠£Á°ÆÁöÑÂ∫èÂè∑ÔºÅ\n\n";
+				cout << "\n\n«Î ‰»Î’˝»∑µƒ–Ú∫≈£°\n\n";
 				break;
 			} 						  
 	    }

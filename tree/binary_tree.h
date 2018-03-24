@@ -19,12 +19,12 @@ public:
 
     void createbitree_preorder();
 
-    //é€’å½’ç‰ˆ
+    //µİ¹é°æ
     void preorder_traverse_recursion(void(*visit)(const T&))const;
     void inorder_traverse_recursion(void(*visit)(const T&))const;
     void postorder_traverse_recursion(void(*visit)(const T&))const;
 
-    //éé€’å½’ç‰ˆ
+    //·Çµİ¹é°æ
     void preorder_traverse(void(*visit)(const T&))const;
     void inorder_traverse(void(*visit)(const T&))const;
     void postorder_traverse(void(*visit)(const T&))const; 
@@ -37,7 +37,7 @@ private:
     treenode<T> *root;
     int nums;
 
-    //è¾…åŠ©é€’å½’å‡½æ•°
+    //¸¨Öúµİ¹éº¯Êı
     void pre(treenode<T> *tnode, void(*visit)(const T&))const;
     void in(treenode<T> *tnode, void(*visit)(const T&))const;
     void post(treenode<T> *tnode, void(*visit)(const T&))const;
@@ -45,7 +45,7 @@ private:
 
 template<typename T>
 void bitree<T>::createbitree_preorder(){
-    cout << "è¯·æŒ‰ç…§å…ˆåºè¾“å…¥æ ‘ä¸­ä¸ªå…ƒç´ å€¼ï¼Œç©ºèŠ‚ç‚¹ç”¨-1è¡¨ç¤ºï¼Œç”¨ç©ºæ ¼éš”å¼€ï¼Œå›è½¦ç»“æŸï¼š" << endl;
+    cout << "Çë°´ÕÕÏÈĞòÊäÈëÊ÷ÖĞ¸öÔªËØÖµ£¬¿Õ½ÚµãÓÃ-1±íÊ¾£¬ÓÃ¿Õ¸ñ¸ô¿ª£¬»Ø³µ½áÊø£º" << endl;
     T temp;
     linkstack<treenode<T>**> ls;
     ls.push(&root);
@@ -62,7 +62,7 @@ void bitree<T>::createbitree_preorder(){
         if(cin.get() == '\n') break;
     }
 
-    cout << "æ ‘å·²åˆ›å»ºæˆåŠŸï¼" << endl;
+    cout << "Ê÷ÒÑ´´½¨³É¹¦£¡" << endl;
 }
 
 template<typename T>

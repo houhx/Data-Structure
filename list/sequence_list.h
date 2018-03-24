@@ -16,7 +16,7 @@ public:
     bool empty()const{ return nowlen == 0; };
     void clear();
     
-    return_code insert(const T&, bool(*cmp)(const T&, const T&));//æŒ‰åºæ’å…¥å…ƒç´ 
+    return_code insert(const T&, bool(*cmp)(const T&, const T&));//°´Ğò²åÈëÔªËØ
     return_code insert(int pos, const T &item);
     return_code deletelemt(int pos, T &out);
     return_code retrieve(int pos, T &out)const;
@@ -27,10 +27,10 @@ public:
     void descendingsort();
     
 private:
-    T *elements;   //å­˜æ”¾æ•°æ®å…ƒç´ 
-    int nowlen;    //å½“å‰çº¿æ€§è¡¨çš„é•¿åº¦
-    int capacity;    //çº¿æ€§è¡¨çš„æœ€å¤§é•¿åº¦
-    int increasement;  //å¢é‡
+    T *elements;   //´æ·ÅÊı¾İÔªËØ
+    int nowlen;    //µ±Ç°ÏßĞÔ±íµÄ³¤¶È
+    int capacity;    //ÏßĞÔ±íµÄ×î´ó³¤¶È
+    int increasement;  //ÔöÁ¿
 };
 
 template<class T>
@@ -169,7 +169,7 @@ void slist<T>::unionlist(const slist<T> &s){
 template<class T>
 return_code slist<T>::insert(const T &item, bool(*cmp)(const T&, const T&)){
     int i=0;
-    while(i<nowlen && !cmp(item, elements[i])) i++; //æ‰¾åˆ°ä¸€ä¸ªç¬¦åˆæ¯”è¾ƒå…³ç³»cmpçš„å…ƒç´ ä½ç½®
+    while(i<nowlen && !cmp(item, elements[i])) i++; //ÕÒµ½Ò»¸ö·ûºÏ±È½Ï¹ØÏµcmpµÄÔªËØÎ»ÖÃ
     
     return insert(i, item);
 }

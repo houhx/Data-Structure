@@ -123,7 +123,7 @@ return_code linklist<T>::insert(const int &position, const T &item){
 		head = newnode;
 	}
 	else{
-		LNode<T> *before = setposition(position-1); //æ‰¾å‡ºæ·»åŠ ä½ç½®çš„å‰é©±èŠ‚ç‚¹
+		LNode<T> *before = setposition(position-1); //ÕÒ³öÌí¼ÓÎ»ÖÃµÄÇ°Çı½Úµã
 		newnode->next = before->next;
 		before->next = newnode;
 	}
@@ -150,7 +150,7 @@ return_code linklist<T>::remove(const int &position, T &save){
 		head = head->next;
 	}
 	else{
-		LNode<T> *before = setposition(position-1); //æ‰¾å‡ºåˆ é™¤ä½ç½®çš„å‰é©±èŠ‚ç‚¹
+		LNode<T> *before = setposition(position-1); //ÕÒ³öÉ¾³ıÎ»ÖÃµÄÇ°Çı½Úµã
 		todelete = before->next;
 		save = todelete->data;
 		before->next = todelete->next;

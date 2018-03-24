@@ -4,14 +4,14 @@
 #include <ctime>
 
 struct Event{
-	int Occurtime; //äº‹ä»¶å‘ç”Ÿçš„æ—¶é—´
-	int etype;     //äº‹ä»¶ç±»å‹ï¼Œ0-è¾¾åˆ°äº‹ä»¶ï¼› xï¼ˆ1-4ï¼‰-xçª—å£ç¦»å¼€äº‹ä»¶, -1ä¸ºåˆå§‹å€¼
+	int Occurtime; //ÊÂ¼ş·¢ÉúµÄÊ±¼ä
+	int etype;     //ÊÂ¼şÀàĞÍ£¬0-´ïµ½ÊÂ¼ş£» x£¨1-4£©-x´°¿ÚÀë¿ªÊÂ¼ş, -1Îª³õÊ¼Öµ
 	Event(int o=0, int e=-1): Occurtime(o), etype(e){}; 
 }; 
 
 struct qelement{
-	int arrivetime; //åˆ°è¾¾é“¶è¡Œçš„æ—¶é—´
-	int dealtime;   //å¤„ç†æ—¶é—´ 
+	int arrivetime; //µ½´ïÒøĞĞµÄÊ±¼ä
+	int dealtime;   //´¦ÀíÊ±¼ä 
 	qelement(int a=0, int d=0): arrivetime(a), dealtime(d){};
 };
 
@@ -38,48 +38,48 @@ void init(){
 	totaltime = 0;
 	totalnums = 0;
 	Event event(0,0);
-	ll.insert(event, cmp); //å°†ç¬¬ä¸€ä¸ªåˆ°è¾¾äº‹ä»¶æ”¾å…¥äº‹ä»¶å‘ç”Ÿå™¨ 
+	ll.insert(event, cmp); //½«µÚÒ»¸öµ½´ïÊÂ¼ş·ÅÈëÊÂ¼ş·¢ÉúÆ÷ 
 }
 
 void customerarrive(){
 	Event e;
 	ll.remove(1,e);
 	
-	cout << "åˆ°è¾¾ï¼Œæ—¶é—´ï¼š" << e.Occurtime ;
+	cout << "µ½´ï£¬Ê±¼ä£º" << e.Occurtime ;
 	
 	int dealtime = 1+rand()%5;
 	int arrivetime = 1+rand()%30;
 	
 	qelement qe(e.Occurtime, dealtime);
 	int minq = minqueue();
-	cout << "è¿›å…¥çª—å£" << minq+1 << endl; 
+	cout << "½øÈë´°¿Ú" << minq+1 << endl; 
 	lq[minq].push(qe);
-	if(lq[minq].size() == 1){ //æ·»åŠ ç¦»å¼€äº‹ä»¶ 
+	if(lq[minq].size() == 1){ //Ìí¼ÓÀë¿ªÊÂ¼ş 
 		Event newdeparture(e.Occurtime+dealtime, minq+1);
 		ll.insert(newdeparture, cmp); 
 	}
 	
-	Event newarrive(e.Occurtime+arrivetime, 0);//æ·»åŠ æ–°çš„è¾¾åˆ°äº‹ä»¶ 
+	Event newarrive(e.Occurtime+arrivetime, 0);//Ìí¼ÓĞÂµÄ´ïµ½ÊÂ¼ş 
 	if( newarrive.Occurtime >= closetime ) return;
 	ll.insert(newarrive, cmp);
 }
 
 void customerdeparture(){
 	Event e;
-	ll.remove(1,e);  //å–å‡ºç¦»å¼€äº‹ä»¶ 
+	ll.remove(1,e);  //È¡³öÀë¿ªÊÂ¼ş 
 	
 	qelement qe;
-	lq[e.etype-1].pop(qe); //å–å‡ºç¦»å¼€çš„äºº
+	lq[e.etype-1].pop(qe); //È¡³öÀë¿ªµÄÈË
 	
-	totaltime += e.Occurtime - qe.arrivetime; //è®°å½•æ—¶é—´å’Œäººæ•° 
+	totaltime += e.Occurtime - qe.arrivetime; //¼ÇÂ¼Ê±¼äºÍÈËÊı 
 	totalnums++;
 	
-	cout << "ç¦»å¼€" << e.etype << "å·çª—å£ï¼Œæ—¶é—´:" << e.Occurtime 
-	     << "åœ¨é“¶è¡Œåœç•™æ—¶é—´ï¼š" <<  e.Occurtime - qe.arrivetime << endl; 
+	cout << "Àë¿ª" << e.etype << "ºÅ´°¿Ú£¬Ê±¼ä:" << e.Occurtime 
+	     << "ÔÚÒøĞĞÍ£ÁôÊ±¼ä£º" <<  e.Occurtime - qe.arrivetime << endl; 
 	
 	if(lq[e.etype-1].size() > 0){
 		lq[e.etype-1].front(qe);
-		Event newdeparture(e.Occurtime + qe.dealtime, e.etype); //æ·»åŠ æ–°çš„ç¦»å¼€äº‹ä»¶ 
+		Event newdeparture(e.Occurtime + qe.dealtime, e.etype); //Ìí¼ÓĞÂµÄÀë¿ªÊÂ¼ş 
 		ll.insert(newdeparture, cmp);
 	} 
 }
@@ -103,5 +103,5 @@ void bank_simulation(){
 		}
 	}
 	
-	cout << "äººä»¬åœ¨é“¶è¡Œçš„å¹³å‡åœç•™æ—¶é—´ï¼š" << totaltime/totalnums << endl;
+	cout << "ÈËÃÇÔÚÒøĞĞµÄÆ½¾ùÍ£ÁôÊ±¼ä£º" << totaltime/totalnums << endl;
 }

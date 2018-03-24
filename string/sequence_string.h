@@ -4,15 +4,15 @@ class mystring{
 public:
     mystring();
     mystring(const char*);
-    friend int strcmp(const mystring&, const mystring&);//æ¯”è¾ƒä¸¤ä¸ªä¸²çš„å¤§å°
-    int strlen(){return len;};//è¿”å›é•¿åº¦
+    friend int strcmp(const mystring&, const mystring&);//±È½ÏÁ½¸ö´®µÄ´óĞ¡
+    int strlen(){return len;};//·µ»Ø³¤¶È
     void clear();
-    friend mystring strcat(mystring&, mystring&);//è¿æ¥ä¸¤ä¸ªä¸²
+    friend mystring strcat(mystring&, mystring&);//Á¬½ÓÁ½¸ö´®
     char get(int index)const;
-    mystring substr(int pos, int len);//è¿”å›å­ä¸²
+    mystring substr(int pos, int len);//·µ»Ø×Ó´®
     void setlen(int l){len = l;};
-    int index(mystring&, int);//æ™®é€šçš„æ¨¡å¼åŒ¹é…
-    int index_kmp(mystring&, int);//kmpç®—æ³•çš„æ¨¡å¼åŒ¹é…
+    int index(mystring&, int);//ÆÕÍ¨µÄÄ£Ê½Æ¥Åä
+    int index_kmp(mystring&, int);//kmpËã·¨µÄÄ£Ê½Æ¥Åä
 private:
     char *str;
     int  len;
@@ -93,7 +93,7 @@ mystring strcat(mystring &str1, mystring &str2){
 
 char mystring::get(int index)const{
     if(index < 0 || index > len-1){
-        cout << "è¶Šç•Œ" << endl;
+        cout << "Ô½½ç" << endl;
         abort();
     }
     return str[index];

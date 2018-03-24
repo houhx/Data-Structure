@@ -2,7 +2,7 @@
 
 
 struct Triple{
-    int row, col; //è¡Œä¸‹æ ‡å’Œåˆ—ä¸‹æ ‡
+    int row, col; //ĞĞÏÂ±êºÍÁĞÏÂ±ê
     int element;
     void set(int r, int c, int e){
         row = r;
@@ -22,10 +22,10 @@ public:
     int gettu(){ return tu;};
     ~smatrix();
 private:
-    Triple *matrixs;  //éé›¶å…ƒä¸‰å…ƒç»„è¡¨
-    int mu, nu, tu;  //è¡Œæ•°ï¼Œåˆ—æ•°ï¼Œéé›¶å…ƒä¸ªæ•°
-    int *rowpos;    //æ ‡ç¤ºæ¯è¡Œçš„ç¬¬ä¸€ä¸ªéé›¶å…ƒç´ åœ¨ä¸‰å…ƒç»„è¡¨ä¸­çš„ä½ç½®
-    static int maxtu;       //éé›¶å…ƒçš„æœ€å¤§ä¸ªæ•°
+    Triple *matrixs;  //·ÇÁãÔªÈıÔª×é±í
+    int mu, nu, tu;  //ĞĞÊı£¬ÁĞÊı£¬·ÇÁãÔª¸öÊı
+    int *rowpos;    //±êÊ¾Ã¿ĞĞµÄµÚÒ»¸ö·ÇÁãÔªËØÔÚÈıÔª×é±íÖĞµÄÎ»ÖÃ
+    static int maxtu;       //·ÇÁãÔªµÄ×î´ó¸öÊı
 };
 
 int smatrix::maxtu = 30;
@@ -100,10 +100,10 @@ return_code smatrix::transposematrix_1(smatrix &result){
 return_code smatrix::transposematrix_2(smatrix &result){
     smatrix out(nu,mu);
 
-    int num[nu] = {0};  //ç»Ÿè®¡è½¬ç½®åæ¯è¡Œçš„éé›¶å…ƒç´ ä¸ªæ•°
+    int num[nu] = {0};  //Í³¼Æ×ªÖÃºóÃ¿ĞĞµÄ·ÇÁãÔªËØ¸öÊı
     for(int i=0; i<tu; i++) num[matrixs[i].col]++;
 
-    int pos[nu] = {0}; //è®°å½•æ¯è¡Œçš„ç¬¬ä¸€ä¸ªéé›¶å…ƒç´ åœ¨æ–°çš„ä¸‰å…ƒç»„è¡¨ä¸­çš„ä½ç½®
+    int pos[nu] = {0}; //¼ÇÂ¼Ã¿ĞĞµÄµÚÒ»¸ö·ÇÁãÔªËØÔÚĞÂµÄÈıÔª×é±íÖĞµÄÎ»ÖÃ
     for(int i=0; i<nu-1; i++) pos[i+1] = pos[i] + num[i];
 
     for(int i=0; i<tu; i++){

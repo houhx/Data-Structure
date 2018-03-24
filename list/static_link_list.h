@@ -1,4 +1,4 @@
-//ç”¨ä¸€ç»´æ•°ç»„å®ç°é“¾è¡¨ 
+//ÓÃÒ»Î¬Êı×éÊµÏÖÁ´±í 
 #include "../include.h"
 
 template<class T>
@@ -22,13 +22,13 @@ public:
 	bool empty()const;
 	void clear();
 private:
-    static int maxsize;	   //æ•°ç»„ç©ºé—´çš„æœ€å¤§é•¿åº¦ 
+    static int maxsize;	   //Êı×é¿Õ¼äµÄ×î´ó³¤¶È 
 	slNode<T> *slnodes;    
-	int first;             //æŒ‡å‘é“¾è¡¨çš„ç¬¬ä¸€ä¸ªå…ƒç´ çš„æ•°ç»„ä¸‹æ ‡
-	int unused;            //æŒ‡å‘æœªç”¨ç©ºé—´çš„ç¬¬ä¸€ä¸ªèŠ‚ç‚¹ 
+	int first;             //Ö¸ÏòÁ´±íµÄµÚÒ»¸öÔªËØµÄÊı×éÏÂ±ê
+	int unused;            //Ö¸ÏòÎ´ÓÃ¿Õ¼äµÄµÚÒ»¸ö½Úµã 
 	int nowsize;
-	int setposition(const int&)const; //è¿”å›å®šä½å…ƒç´ ç›¸åº”çš„æ•°ç»„ä¸‹æ ‡
-	void freenode(int &); //å°†åˆ æ‰çš„èŠ‚ç‚¹å›æ”¶ 
+	int setposition(const int&)const; //·µ»Ø¶¨Î»ÔªËØÏàÓ¦µÄÊı×éÏÂ±ê
+	void freenode(int &); //½«É¾µôµÄ½Úµã»ØÊÕ 
 };
 
 template<class T>
@@ -75,16 +75,16 @@ return_code sllist<T>::insert(const int &position, const T &item){
 	
 	if(nowsize == maxsize) return overflow;
 	
-	if(nowsize == 0){ //è¡¨ä¸ºç©ºæ—¶æ’å…¥ 
+	if(nowsize == 0){ //±íÎª¿ÕÊ±²åÈë 
 		first = unused;
 		slnodes[first].data = item;
 		unused = slnodes[unused].next;
 		slnodes[first].next = -1;
 	}
 	else{
-		int index = setposition(position-1); //æ‰¾å‡ºæ’å…¥ä½ç½®çš„å‰ä¸€ä¸ªå…ƒç´  
+		int index = setposition(position-1); //ÕÒ³ö²åÈëÎ»ÖÃµÄÇ°Ò»¸öÔªËØ 
 		
-		int newnode = unused; //æŒ‡å‘æ–°å»ºèŠ‚ç‚¹çš„ä¸‹æ ‡
+		int newnode = unused; //Ö¸ÏòĞÂ½¨½ÚµãµÄÏÂ±ê
 		unused = slnodes[unused].next; 
 		slnodes[newnode].data = item;
 		
