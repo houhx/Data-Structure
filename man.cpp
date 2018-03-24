@@ -1,4 +1,4 @@
-﻿#include "data_structure_test.h"
+#include "data_structure_test.h"
 #include "bank_queueing_problem.h"
 #include "string/sequence_string.h"
 #include "matrix/sparse_matrix.h"

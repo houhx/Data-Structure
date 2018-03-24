@@ -1,4 +1,4 @@
-﻿//用一维数组实现链表 
+//用一维数组实现链表 
 #include "../include.h"
 
 template<class T>
