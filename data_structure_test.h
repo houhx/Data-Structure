@@ -266,7 +266,12 @@ void test(){
 									}
 											        
 									case 4: {
-										cout << "\n\n";
+										if(cq.empty()){
+											cout << "\n\n队列是空的！\n\n";
+											printcq();
+											break;
+										}
+										cout << "\n\n队列中的元素为:";
 										cq.traver([](elemtype& e)->void{cout << e << "  ";});
 										cout << "\n\n";
 									    printcq();
@@ -281,33 +286,39 @@ void test(){
 								    }
 											     
 									case 6: {
-										if(cq.empty()) cout << "\n\n队列是空的！\n";
+										if(cq.empty()) cout << "\n\n队列是空的！\n\n";
 										else{
 											cq.front(type);
-									        cout << "\n\n" << type << "\n\n";
+									        cout << "\n\n" << "队首元素为：" << type << "\n\n";
 										}
 										printcq();
 										break;
 									}
 											        
 									case 7: {
-										if(cq.empty()) cout << "\n\n队列是空的！\n";
+										if(cq.empty()) cout << "\n\n队列是空的！\n\n";
 										else{
 											cq.back(type);
-									        cout << "\n\n" << type << "\n\n";
+									        cout << "\n\n" << "队尾元素为：" << type << "\n\n";
 										}
 										printcq();
 										break;
 									}
 											        
 									case 8: {
-										cout << "\n\n" << cq.size() << "\n\n";
+										cout << "\n\n" << "队列大小为：" << cq.size() << "\n\n";
 									    printcq();
 										break;
 									}
 									
 									case 9: {
-										cout << "\n\n" << cq.capacity() << "\n\n";
+										cout << "\n\n" << "队列容量为：" << cq.capacity() << "\n\n";
+										printcq();
+										break;
+									}
+
+									default: {
+										cout << "\n\n请输入正确的序号！\n\n";
 										printcq();
 										break;
 									}        		
@@ -440,7 +451,12 @@ void test(){
 									}
 											        
 									case 4: {
-										cout << "\n\n";
+										if(sq.empty()){
+											cout << "\n\n队列是空的！\n\n";
+											printsq();
+											break;
+										}
+										cout << "\n\n队列中的元素为";
 										sq.traver([](elemtype& e)->void{cout << e << "  ";});
 										cout << "\n\n";
 									    printsq();
@@ -458,7 +474,7 @@ void test(){
 										if(sq.empty()) cout << "\n\n队列是空的！\n";
 										else{
 											sq.front(type);
-									        cout << "\n\n" << type << "\n\n";
+									        cout << "\n\n" << "队首元素为：" << type << "\n\n";
 										}
 										printsq();
 										break;
@@ -468,20 +484,26 @@ void test(){
 										if(sq.empty()) cout << "\n\n队列是空的！\n";
 										else{
 											sq.back(type);
-									        cout << "\n\n" << type << "\n\n";
+									        cout << "\n\n" << "队尾元素为：" << type << "\n\n";
 										}
 										printsq();
 										break;
 									}
 											        
 									case 8: {
-										cout << "\n\n" << sq.size() << "\n\n";
+										cout << "\n\n" << "队列大小为：" << sq.size() << "\n\n";
 									    printsq();
 										break;
 									}
 									
 									case 9: {
-										cout << "\n\n" << sq.capacity() << "\n\n";
+										cout << "\n\n" << "队列容量为：" << sq.capacity() << "\n\n";
+										printsq();
+										break;
+									}
+
+									default: {
+										cout << "\n\n请输入正确序号！\n\n";
 										printsq();
 										break;
 									}        		
