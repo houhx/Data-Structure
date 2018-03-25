@@ -71,5 +71,5 @@ int main(){
 	//matrix_test_case();
 
 	OLgraph<int, int> olg(4, 3);
-	getchar();
+	olg.creategraph();
 }
