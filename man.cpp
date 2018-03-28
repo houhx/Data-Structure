@@ -2,7 +2,9 @@
 #include "bank_queueing_problem.h"
 #include "string/sequence_string.h"
 #include "matrix/sparse_matrix.h"
-#include "graph/orthogonal_list_graph.h"
+#include "graph/orthogonal_list_digraph.h"
+#include "graph/adjacency_multilist_undigraph.h"
+#include "graph/adjacency_list_graph.h"
 
 void matrix_test_case(){
 	//matrix's test case
@@ -62,6 +64,10 @@ void matrix_test_case(){
 	r.printm();*/
 }
 
+void stop(){
+	cout << endl;
+	getchar();
+}
 
 int main(){
 	//bank_simulation();
@@ -70,6 +76,16 @@ int main(){
 
 	//matrix_test_case();
 
-	OLgraph<int, int> olg(4, 3);
-	olg.creategraph();
+	algraph<string, int> graph(9,11);
+	graph.creategraph("graph\\testcases\\critical_path_digraph_test.txt");
+	graph.digraph_toposort_judgecyclic();
+	stop();
+	graph.cyclic_judge_digraph_dfs();
+	stop();
+	graph.critical_path_digraph();
+	stop();
+	graph.critical_path_digraph_mythought();
+	stop();
+	//function<void(const int&)> print = [](const int &i) -> void { cout << i << " "; };
+	
 }

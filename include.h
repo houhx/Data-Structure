@@ -4,6 +4,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include <algorithm>
+#include <functional>
+#include <fstream>
+
 using namespace std;
 
 typedef int elemtype;
